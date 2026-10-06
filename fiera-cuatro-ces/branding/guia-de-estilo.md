@@ -1,10 +1,10 @@
-# Guía de estilo – Cuatro Ces
+# Guía de estilo – Cecé
 
 > 🇮🇹 **Nota:** questo file è la *fonte unica* del brand. Gli altri file devono usare esattamente questi nomi, colori e slogan. **Versione 2: posizionamento ultra lusso.**
 
 ## 1. Posicionamiento
 
-**Cuatro Ces es una marca de cerámica de lujo artesanal mediterráneo.**
+**Cecé es una marca de cerámica de lujo artesanal mediterráneo.**
 Cada pieza se concibe como un objeto de colección para la alta restauración, la hotelería de lujo y los proyectos de interiorismo más exigentes.
 
 **Pilares del lujo** *(HIPÓTESIS: confirmar con la realidad del producto)*:
@@ -21,14 +21,15 @@ Cada pieza se concibe como un objeto de colección para la alta restauración, l
 
 ## 2. Nombre
 
-**Cuatro Ces**: las cuatro *C* de la experiencia, **Comida, Carne, Cóctel y Canciones**, cuatro maneras de vivir la cerámica en la mesa y en el espacio.
+**Cecé**: el sonido de la letra C repetida («ce» + «cé»), las C de las cuatro experiencias, **Comida, Carne, Cóctel y Canciones**.
 
-- Se escribe siempre *Cuatro Ces*, dos palabras con mayúscula. Nunca "4Ces" ni "Cuatro C's".
-- Hashtag: **#CuatroCes**.
+- Se escribe siempre *Cecé*: mayúscula inicial y tilde en la última é (palabra aguda terminada en vocal). Nunca «Cecè», «CeCé» ni «CC».
+- Pronunciación: acento en la última sílaba; en España /θeˈθe/.
+- Hashtag: **#Cecé** (alternativa por verificar: #CeceCeramica).
 - Las 4C se citan siempre en este orden: *Comida, Carne, Cóctel, Canciones*.
 
-> 🇮🇹 Il plurale della lettera *ce* è *ces*: "Cuatro Ces" è corretto.
-> ⚠️ **Marchio da verificare** su EUIPO (TMview) e OEPM: non sappiamo se il nome sia registrabile.
+> 🇮🇹 Rischi: per un pubblico spagnolo ricorda il *ceceo* (difetto di pronuncia); niente monogramma «CC» incrociato (confusione con Chanel).
+> ⚠️ **Marchio da verificare** su EUIPO (TMview) e OEPM. Il logo su Canva va aggiornato con il nuovo nome.
 
 ## 3. Logotipo
 
@@ -107,13 +108,13 @@ Los colores no cambian. Cambia la proporción: **contención, mucho azul noche y
 ## 9. Resumen rápido
 
 ```
-Nombre:        Cuatro Ces – lujo artesanal mediterráneo
+Nombre:        Cecé – lujo artesanal mediterráneo
 Eslogan:       «Cerámica con sabor»  (interno: «Sirve, brinda, canta»)
 Las 4C:        Comida · Carne · Cóctel · Canciones
 Colores:       #0B1030 azul noche (dominante) · #FFFFFF blanco
                #1F4FBF azul cobalto · #F4B41A oro azafrán (detalle)
                #C8553D terracota (mínimo)
 Tipografía:    Cormorant Garamond (títulos) · Inter (texto)  [propuesta]
-Hashtag:       #CuatroCes
+Hashtag:       #Cecé
 Registro:      formal, usted, español de España, quiet luxury
 ```

@@ -1,4 +1,4 @@
-# El producto – Cuatro Ces (lujo) · v3
+# El producto – Cecé (lujo) · v3
 
 > ⚠️ **HIPÓTESIS:** la gama real todavía no está confirmada. Los nombres de las líneas son **propuestas** y las características técnicas están **por verificar**.
 > 🇮🇹 Versione 3: quattro linee (una per C), innovazione e servizi. Documento completo in italiano: vedi il doc condiviso.

@@ -1,4 +1,4 @@
-# Obsequios de feria – Cuatro Ces
+# Obsequios de feria – Cecé
 
 > ⚠️ Costes = **estimaciones muy orientativas, no verificadas**. Pedir 2–3 presupuestos antes de la presentación.
 > 🇮🇹 Principio: il legame con il brand passa da motivo, colore o dettaglio, mai dal logo grande. Oggetti riutilizzabili, belli ma sobri; niente oro sui gadget per tutti.

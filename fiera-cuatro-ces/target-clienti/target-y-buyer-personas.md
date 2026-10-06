@@ -1,4 +1,4 @@
-# Público objetivo y buyer personas – Cuatro Ces (lujo)
+# Público objetivo y buyer personas – Cecé (lujo)
 
 > ⚠️ **HIPÓTESIS DE TRABAJO.** No hay datos oficiales de la feria. Todo debe validarse con la lista **«Por verificar»**.
 > 🇮🇹 Personas fittizie. Nessuna statistica inventata. **Versione 2: posizionamento ultra lusso.**
@@ -97,7 +97,7 @@
 
 ## e) Recorrido del cliente en la feria
 
-| Fase | Qué ocurre | Acciones Cuatro Ces |
+| Fase | Qué ocurre | Acciones Cecé |
 |------|-----------|---------------------|
 | **1. Descubrimiento** | Antes de la feria | Invitación personal impresa (sobre azul noche, logotipo en oro) y digital; cita en el salón privado; presencia discreta en prensa e Instagram |
 | **2. Visita** | Llega al estand | Galería abierta con pocas piezas sobre pedestales; recepción por una persona del equipo que identifica el perfil y ofrece la experiencia |
@@ -140,4 +140,4 @@ Elemento común: **«Cerámica con sabor»**, tratamiento de **usted**, tono *qu
 4. Normativa de la feria: degustaciones, cocina, alcohol, música, espacios cerrados.
 5. RGPD para la recogida de contactos.
 6. Zona geográfica de las personas.
-7. Marca «Cuatro Ces» en EUIPO y OEPM.
+7. Marca «Cecé» en EUIPO y OEPM.

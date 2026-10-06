@@ -1,8 +1,8 @@
-# Cuatro Ces – progetto stand fieristico (UNIMORE, EGI)
+# Cecé – progetto stand fieristico (UNIMORE, EGI)
 
 Stand per una fiera di ceramica con esperienza "4C": **Comida, Carne, Cóctel, Canciones**.
 
-**Posizionamento: ultra lusso** (lujo artesanal mediterráneo). Versione 2 dei file 1–3.
+**Posizionamento: ultra lusso** (lujo artesanal mediterráneo). **Nome del brand: Cecé** (prima «Cuatro Ces»; la cartella mantiene il vecchio nome).
 
 ## Stato delle sezioni
 
@@ -18,7 +18,7 @@ Stand per una fiera di ceramica con esperienza "4C": **Comida, Carne, Cóctel, C
 | 8 | `presentazione/` | ⏳ da fare (alla fine) |
 | 9 | `glosario.md` | ⏳ da fare (alla fine) |
 | 10 | `verifica.md` | ⏳ da fare (alla fine) |
-| + | `sito-web/` | ✅ prototipo: sito interattivo con render 3D (ES/IT) |
+| + | `sito-web/` | ✅ prototipo v2: sito Cecé con immagini IA (anteprime; alta risoluzione da Canva) |
 
 ## Dati ancora da confermare
 
