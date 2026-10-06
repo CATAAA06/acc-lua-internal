@@ -1,121 +1,104 @@
-# La cerámica dentro de las 4C – Cuatro Ces
+# La cerámica dentro de las 4C – Cuatro Ces (lujo)
 
-> ⚠️ **HIPÓTESIS:** la gama de productos todavía no está confirmada. Se usa el mapa de marca acordado (Comida = platos/cazuelas; Carne = bandejas y tablas; Cóctel = tazas/vasos/jarras; Canciones = paredes y suelos de azulejos). Las características técnicas están marcadas como **por verificar**.
->
-> 🇮🇹 **Nota:** ogni C ha (1) cosa si espone, (2) come si mostra, (3) per quale persona è pensata, (4) il testo breve per la slide. Le persone sono quelle di `target-clienti/`.
+> ⚠️ **HIPÓTESIS:** la gama todavía no está confirmada. Se usa el mapa de marca acordado. Las características técnicas y los pilares del lujo (hecho a mano, ediciones numeradas) están **por verificar**.
+> 🇮🇹 **Versione 2: ultra lusso.** Per ogni C: cosa si espone, come, per quale persona, testo per la slide.
 
----
+## Principio general: galería + salón privado
 
-## Principio general
+**«Cada pieza, una obra. Cada visita, una invitación.»**
 
-**«No exponemos cerámica: la usamos.»**
-Cada pieza se ve **en uso real** (con comida, con bebida, en una pared) y además en un **expositor de referencia** con su ficha técnica y un código QR al catálogo.
+| Espacio | Para quién | Qué ocurre |
+|---------|-----------|-----------|
+| **Galería** (abierta al pasillo) | Todos los visitantes | Pocas piezas sobre pedestales blancos, con iluminación puntual de museo, número de edición y ficha discreta con QR |
+| **Salón privado** (por cita) | Personas cualificadas | Experiencia 4C completa: *chef's table*, cóctel de autor, música acústica en el salón de azulejos |
 
-| C | Productos | Persona principal | Color de acento |
-|---|-----------|-------------------|-----------------|
-| **Comida** | Platos, cazuelas, fuentes | Lucía (HORECA) | Terracota |
-| **Carne** | Bandejas y tablas de presentación | Lucía (HORECA) | Terracota sobre azul noche |
-| **Cóctel** | Tazas, vasos, jarras | Lucía y Andrés | Oro azafrán |
-| **Canciones** | Azulejos de pared y pavimento | Javier (interiorista) | Azul cobalto |
-
----
+| C | Productos | Persona principal | Acento |
+|---|-----------|-------------------|--------|
+| **Comida** | Platos, cazuelas, fuentes | Elena | Terracota |
+| **Carne** | Bandejas y tablas de presentación | Elena | Terracota sobre azul noche |
+| **Cóctel** | Tazas, vasos, jarras (ediciones numeradas) | Sofía, Elena | Oro azafrán |
+| **Canciones** | Azulejos de pared y pavimento | Javier | Azul cobalto |
 
 ## 1. Comida 🍽️
 
-**Productos:** platos llanos y hondos, cazuelas, fuentes para compartir.
+**Productos:** platos, cazuelas y fuentes de la colección.
 
 **Cómo se muestra:**
-- **Mesa de degustación** con pequeñas raciones servidas en cazuelas y platos de la gama (p. ej. tapas).
-- **Mesa puesta** al lado como escaparate: un cubierto completo (plato, cazuela, fuente) montado como en un restaurante.
-- **Pared de platos:** composición vertical de platos de distintos tamaños y acabados, con número de referencia.
-- Ficha técnica junto a cada pieza: medidas, capacidad, acabado y usos (horno, lavavajillas: **por verificar**).
+- **Chef's table** en el salón privado: menú breve de 2–3 pases servidos en piezas de la colección (chef invitado: **por confirmar**).
+- **Mesa de autor** en la galería: un servicio completo montado como en un restaurante gastronómico, con mantelería y cubertería coordinadas.
+- Una sola **pieza protagonista** sobre pedestal, con su número de edición y la historia del taller.
 
-**Por qué funciona con Lucía:** ve sus platos servidos en nuestra cerámica, no en una foto de catálogo.
+**Por qué funciona con Elena:** ve cómo la cerámica eleva un menú degustación, exactamente el tipo de servicio de su hotel.
 
 **Texto para diapositiva:**
-> **Comida – Cerámica que se come con los ojos**
-> Servimos degustaciones en nuestros platos y cazuelas para que el profesional compruebe su resistencia, su tamaño y su presencia en la mesa. Cada pieza tiene su ficha técnica al alcance de la mano.
-
----
+> **Comida – La mesa como obra**
+> En nuestro salón privado, un chef sirve un breve menú en piezas de la colección. La directora de un hotel de lujo descubre cómo una vajilla única transforma la experiencia gastronómica de sus huéspedes.
 
 ## 2. Carne 🥩
 
-**Productos:** bandejas y tablas de cerámica para presentar y servir carne.
+**Productos:** bandejas y tablas de presentación.
 
 **Cómo se muestra:**
-- **Estación de servicio** donde se presentan cortes de carne (o alternativa vegetal) ya cocinados sobre bandejas y tablas de la gama.
-- Comparativa visual: la misma ración en bandeja de cerámica frente a una presentación estándar.
-- Expositor vertical con las tablas en distintos formatos.
+- **Servicio en mesa:** un corte selecto, ya cocinado por el catering, se presenta y se trincha ante el invitado sobre una bandeja de la colección.
+- Tablas de presentación expuestas en vertical, como piezas de arte, en la pared del salón.
 
-**Por qué funciona con Lucía:** la presentación de la carne es una de las partes más visibles de una carta; la cerámica la hace memorable.
+**Por qué funciona con Elena:** la presentación en sala es un momento clave en la alta restauración; la cerámica lo convierte en ritual.
 
 **Texto para diapositiva:**
-> **Carne – Presentación con carácter**
-> Nuestras bandejas y tablas de cerámica convierten cada corte en protagonista. Las mostramos en servicio real para que el cliente valore el formato, el peso y el efecto en la mesa.
+> **Carne – El ritual del servicio**
+> Cada corte se presenta en mesa sobre bandejas y tablas de cerámica hechas a mano. El servicio se convierte en un momento escénico que nuestros clientes pueden llevar a su sala.
 
-> 🇮🇹 **Attenzione (da verificare):**
-> - **Taglieri:** la ceramica rovina i coltelli. Presentateli come **tablas de presentación / de servicio**, non «tablas de cortar».
-> - **Piastre calde:** dire che resistono al calore o al forno richiede un dato tecnico reale. Finché non c'è, non scrivetelo.
-> - **Cucinare in fiera:** di solito le fiere limitano fuochi e piastre. Probabilmente servirà un catering esterno che porta la carne già cotta. Da chiedere all'organizzatore.
-
----
+> 🇮🇹 **Da verificare:**
+> - **Taglieri:** chiamateli *tablas de presentación*, non *de cortar*, perché la ceramica rovina i coltelli. Il taglio in sala va fatto su un supporto adatto oppure si serve la carne già porzionata.
+> - **Resistenza al calore:** non dichiararla senza dati tecnici.
+> - **Cucina in fiera:** quasi sicuramente serve un catering esterno. Chiedere all'organizzatore.
 
 ## 3. Cóctel 🍸
 
-**Productos:** tazas, vasos, jarras.
+**Productos:** tazas, vasos y jarras, con **ediciones numeradas** *(por confirmar)*.
 
 **Cómo se muestra:**
-- **Barra de cócteles** donde las bebidas se sirven exclusivamente en tazas y vasos de la gama, con jarras para el servicio.
-- Carta breve de 3–4 cócteles (con opción **sin alcohol**), cada uno asociado a una pieza concreta.
-- Estantería detrás de la barra con todas las referencias a la vista, como en una coctelería.
-- Momento de relación: el cóctel cierra la visita o la reunión comercial con Andrés.
+- **Barra de mixología de autor** en el salón: cada cóctel se crea para una pieza concreta (2–3 propuestas, siempre con una opción **sin alcohol**).
+- Vitrina retroiluminada con la edición limitada: cada pieza con su número y su certificado.
+- El cóctel cierra la cita: un momento de relación con el cliente.
 
-**Por qué funciona con Lucía y Andrés:** Lucía imagina la barra de su local; para Andrés, tazas y vasos son productos de alta rotación, fáciles de vender.
+**Por qué funciona con Sofía y Elena:** Sofía ve un objeto de colección para su galería; Elena, la identidad de su bar.
 
 **Texto para diapositiva:**
-> **Cóctel – Brindar en cerámica**
-> Nuestra barra sirve cada cóctel en tazas, vasos y jarras de la gama. El visitante sostiene el producto en la mano y descubre una alternativa con personalidad para su barra.
+> **Cóctel – Brindar con una pieza única**
+> Un mixólogo crea cada cóctel para una taza, un vaso o una jarra de edición limitada. El invitado sostiene en la mano una pieza numerada y descubre el valor del objeto hecho a mano.
 
-> 🇮🇹 **Da verificare:** permessi per servire alcolici nello stand, regole su vetro/ceramica nelle aree comuni, eventuale cauzione sulle tazze per evitare che spariscano.
-
----
+> 🇮🇹 **Da verificare:** permessi per gli alcolici, e chi sarà il mixologo (professionista ingaggiato? costo in range).
 
 ## 4. Canciones 🎶
 
-**Productos:** azulejos de pared y pavimento.
+**Productos:** azulejos de pared y pavimento, pintados a mano *(por confirmar)*.
 
 **Cómo se muestra:**
-- **Rincón musical** con pared y suelo revestidos de azulejos de la gama. Es el fondo de música en directo o de una lista de reproducción a volumen moderado.
-- Muestra a escala 1:1: el interiorista camina sobre el pavimento y toca la pared.
-- **Muestrario** de azulejos en formato reducido para llevar (conversión para Javier).
-- Paneles con composiciones alternativas (colores y patrones) y QR a fotografías de proyectos *(si existen)*.
-- El logotipo (retícula 2×2 de azulejos) puede reproducirse en la pared como elemento fotografiable con #CuatroCes.
+- **El salón privado es el propio expositor:** paredes y suelo revestidos con azulejos de la colección.
+- **Música acústica en directo** a volumen bajo (p. ej. guitarra o piano; formato **por confirmar**) que acompaña la conversación sin interrumpirla.
+- **Estuche de muestras** (caja de presentación con azulejos y ficha técnica) para los interioristas.
+- La retícula 2×2 del logotipo reproducida en azulejo y oro: elemento fotografiable con #CuatroCes.
 
-**Por qué funciona con Javier:** ve el material instalado en un ambiente real de hostelería, no una muestra suelta.
+**Por qué funciona con Javier:** pisa y toca el revestimiento en un ambiente real de lujo y se lleva un estuche de muestras para su próximo proyecto.
 
 **Texto para diapositiva:**
-> **Canciones – Espacios que suenan a cerámica**
-> Paredes y suelos de azulejos crean el escenario de nuestra música. El interiorista recorre el revestimiento instalado, lo toca y se lleva un muestrario para su próximo proyecto.
+> **Canciones – Un espacio que suena a cerámica**
+> Nuestro salón privado está revestido de azulejos de la colección. Con música acústica en directo, el interiorista vive el material instalado y se lleva un estuche de muestras para su próximo proyecto.
 
-> 🇮🇹 **Da verificare:**
-> - **Musica:** in Spagna la musica in pubblico richiede in genere una licenza per i diritti d'autore (SGAE o simili). Chiedete all'organizzatore chi la gestisce e quale volume è permesso.
-> - **Acustica:** le superfici in ceramica riflettono il suono. Tenete il volume basso perché non disturbi le conversazioni commerciali.
+> 🇮🇹 **Da verificare:** licenza per la musica (in Spagna di solito SGAE), limiti di volume della fiera, acustica (la ceramica riflette il suono, tenete il volume basso).
 
----
+## Elementos comunes
 
-## Elementos comunes a las 4C
-
-- **Ficha técnica + QR** en cada expositor (catálogo digital, solicitud de muestras).
-- **Señalética** con la letra C y el color de acento correspondiente.
-- **Recorrido sugerido:** Comida → Carne → Cóctel, con Canciones como fondo de todo el estand. El orden definitivo dependerá de la planimetría.
-- **Alérgenos:** la información de alérgenos de la comida servida es obligatoria en la UE (Reglamento 1169/2011). Debe estar visible.
-
----
+- **Iluminación:** luz cálida y puntual sobre cada pieza; el resto del espacio, en penumbra azul noche.
+- **Fichas discretas:** número de edición, taller, QR al catálogo privado. **Sin precios a la vista.**
+- **Equipo:** pocas personas, vestidas de forma coherente con la marca, que reciben por cita.
+- **Alérgenos:** información obligatoria en la UE (Reglamento 1169/2011), presentada con el mismo diseño de la carta.
 
 ## Por verificar / da verificare
 
-1. Lista definitiva de productos y referencias.
-2. Datos técnicos de cada pieza (lavavajillas, horno, choque térmico, uso en pavimento, antideslizante).
-3. Normativa de la feria: degustaciones, cocina en el estand, alcohol, música y volumen.
-4. Catering externo y gestión de alérgenos.
-5. Existencia de fotografías de proyectos reales para los QR de Canciones.
+1. Gama definitiva y pilares del lujo reales (hecho a mano, numeración, personalización).
+2. Datos técnicos de las piezas.
+3. Normativa de la feria: espacios cerrados, cocina, alcohol, música.
+4. Catering, chef, mixólogo y músicos: disponibilidad y costes en range.
+5. Diseño y coste del estuche de muestras y de los certificados.

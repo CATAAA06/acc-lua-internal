@@ -1,126 +1,119 @@
 # Guía de estilo – Cuatro Ces
 
-> 🇮🇹 **Nota:** questo file è la *fonte unica* del brand. Tutti gli altri file (target, prodotto, marketing, presentazione) devono usare esattamente questi nomi, colori e slogan. Se cambiate qualcosa, cambiatelo prima qui.
+> 🇮🇹 **Nota:** questo file è la *fonte unica* del brand. Gli altri file devono usare esattamente questi nomi, colori e slogan. **Versione 2: posizionamento ultra lusso.**
 
----
+## 1. Posicionamiento
 
-## 1. Nombre
+**Cuatro Ces es una marca de cerámica de lujo artesanal mediterráneo.**
+Cada pieza se concibe como un objeto de colección para la alta restauración, la hotelería de lujo y los proyectos de interiorismo más exigentes.
 
-**Cuatro Ces**
+**Pilares del lujo** *(HIPÓTESIS: confirmar con la realidad del producto)*:
 
-- **Significado:** las cuatro letras *C* que definen la experiencia del estand: **Comida, Carne, Cóctel y Canciones**. Cada C es un momento de uso de la cerámica: servir, presentar, brindar y vivir el espacio.
-- **Escritura correcta:** siempre *Cuatro Ces* (dos palabras, ambas con mayúscula inicial). No usar "4Ces", "CuatroCes" ni "Cuatro C's".
-  - Excepción: el hashtag **#CuatroCes** (sin espacio, por necesidad técnica).
-- **Las 4C**, cuando se citan juntas, siempre en este orden: *Comida, Carne, Cóctel, Canciones*.
+| Pilar | Qué significa |
+|-------|---------------|
+| Artesanía | Piezas hechas y pintadas a mano |
+| Exclusividad | Ediciones limitadas y numeradas |
+| Personalización | Colecciones a medida (monograma, colores, formatos) |
+| Autenticidad | Certificado de autenticidad y origen del taller |
+| Servicio | Atención personalizada, por cita, y reposición garantizada |
 
-> 🇮🇹 **Nota linguistica:** il plurale della lettera *ce* in spagnolo è *ces*, quindi "Cuatro Ces" è corretto. Evitate "C's": in spagnolo l'apostrofo per il plurale è un anglicismo errato.
->
-> ⚠️ **Marchio da verificare:** non sappiamo se "Cuatro Ces" sia libero come marchio. Da controllare su EUIPO (eSearch plus / TMview) e OEPM (Spagna) prima di presentarlo come nome registrabile.
+> 🇮🇹 **Attenzione:** il lusso va dimostrato. Se uno di questi pilastri non è vero per il prodotto, toglietelo: il docente lo chiederà.
 
----
+## 2. Nombre
 
-## 2. Logotipo
+**Cuatro Ces**: las cuatro *C* de la experiencia, **Comida, Carne, Cóctel y Canciones**, cuatro maneras de vivir la cerámica en la mesa y en el espacio.
+
+- Se escribe siempre *Cuatro Ces*, dos palabras con mayúscula. Nunca "4Ces" ni "Cuatro C's".
+- Hashtag: **#CuatroCes**.
+- Las 4C se citan siempre en este orden: *Comida, Carne, Cóctel, Canciones*.
+
+> 🇮🇹 Il plurale della lettera *ce* è *ces*: "Cuatro Ces" è corretto.
+> ⚠️ **Marchio da verificare** su EUIPO (TMview) e OEPM: non sappiamo se il nome sia registrabile.
+
+## 3. Logotipo
 
 - **Concepto:** retícula 2×2 de cuatro azulejos, cada uno con una C.
-- **Archivo:** el logotipo definitivo está en Canva. No se redibuja ni se modifica en este proyecto.
-- **Uso:**
-  - Respetar un margen de seguridad alrededor del logotipo (p. ej. la anchura de un azulejo).
-  - Versión en positivo (sobre blanco) y en negativo (sobre azul noche).
-  - No deformar, girar ni cambiar los colores de los azulejos.
+- El archivo definitivo está en Canva y no se modifica.
+- **Versión preferente:** en negativo (blanco u oro azafrán sobre azul noche).
+- Margen de seguridad amplio: en el lujo, el espacio vacío también comunica.
+- En impresión, la versión oro puede aplicarse con estampación en caliente (*hot foil*). Presupuesto por verificar.
 
-> 🇮🇹 **Da fare:** esportate da Canva il logo in PNG trasparente (positivo e negativo) e in SVG/PDF se disponibile. Verificate che i colori del logo coincidano con gli HEX qui sotto.
-
----
-
-## 3. Eslogan
+## 4. Eslogan
 
 | Uso | Texto |
 |-----|-------|
-| **Principal** | **«Cerámica con sabor»** |
-| Alternativo (campañas, merchandising) | «Sirve, brinda, canta» |
+| **Único eslogan público** | **«Cerámica con sabor»** |
+| Uso interno (equipo, concepto creativo) | «Sirve, brinda, canta» |
 
-> 🇮🇹 **Nota di registro:** «Sirve, brinda, canta» usa l'imperativo con il *tú*. In pubblicità è normale e suona dinamico, ma il resto dei testi è con l'*usted*. Consiglio: usarlo solo in contesti creativi (social, merch, parete dello stand) e mai in email o schede commerciali.
+> 🇮🇹 «Sirve, brinda, canta» usa il *tú* e un ritmo da campagna di massa: non adatto al lusso in pubblico. Lo teniamo solo come concetto interno.
 
----
+## 5. Paleta de colores
 
-## 4. Paleta de colores
+Los colores no cambian. Cambia la proporción: **contención, mucho azul noche y blanco, y el oro como detalle.**
 
-| Nombre | HEX | RGB | Uso principal |
-|--------|-----|-----|---------------|
-| **Azul cobalto** | `#1F4FBF` | 31, 79, 191 | Color de marca; títulos, azulejos, elementos destacados |
-| **Blanco** | `#FFFFFF` | 255, 255, 255 | Fondos, espacio en blanco, textos sobre azul |
-| **Terracota** | `#C8553D` | 200, 85, 61 | Acento cálido; zona Comida y Carne, botones de llamada a la acción |
-| **Oro azafrán** | `#F4B41A` | 244, 180, 26 | Acento festivo; zona Cóctel, detalles, iconos |
-| **Azul noche** | `#0B1030` | 11, 16, 48 | Textos largos, fondos oscuros, zona Canciones |
+| Nombre | HEX | RGB | Proporción | Uso |
+|--------|-----|-----|-----------|-----|
+| **Azul noche** | `#0B1030` | 11, 16, 48 | ~45 % | Color dominante: fondos, estand, textos |
+| **Blanco** | `#FFFFFF` | 255, 255, 255 | ~35 % | Espacio vacío, pedestales, textos sobre azul |
+| **Azul cobalto** | `#1F4FBF` | 31, 79, 191 | ~12 % | Los azulejos y la propia cerámica |
+| **Oro azafrán** | `#F4B41A` | 244, 180, 26 | ~5 % | Detalles «oro»: logotipo, filetes, numeración de ediciones |
+| **Terracota** | `#C8553D` | 200, 85, 61 | ~3 % | Solo en piezas y detalles de Comida y Carne |
 
-**Proporción orientativa:** 60 % blanco · 25 % azul (cobalto + noche) · 15 % acentos (terracota + oro azafrán).
+**Color de acento por C** (señalética discreta): Comida y Carne en terracota · Cóctel en oro azafrán · Canciones en azul cobalto.
 
-**Color asociado a cada C** (para señalética, diapositivas e iconos):
+> 🇮🇹 L'oro azafrán su bianco ha poco contrasto: per il testo usatelo solo su blu notte (da verificare con un contrast checker, es. WebAIM).
 
-| C | Color de acento |
-|---|-----------------|
-| Comida | Terracota `#C8553D` |
-| Carne | Terracota `#C8553D` sobre azul noche |
-| Cóctel | Oro azafrán `#F4B41A` |
-| Canciones | Azul cobalto `#1F4FBF` |
-
-> 🇮🇹 **Accessibilità (da verificare con un contrast checker, es. WebAIM):**
-> - Testo blu notte su bianco e bianco su blu cobalto: contrasto alto, ok per il testo.
-> - **Oro azafrán su bianco: contrasto basso.** Usatelo per forme e icone, non per il testo. Su blu notte invece funziona.
-
----
-
-## 5. Tipografía (propuesta)
+## 6. Tipografía (propuesta)
 
 | Uso | Tipo de letra | Motivo |
 |-----|---------------|--------|
-| Títulos | **Fraunces** (serif, Google Fonts) | Carácter artesanal, evoca la tradición cerámica |
-| Textos y datos | **Inter** (sans serif, Google Fonts) | Muy legible en pantalla, diapositivas y fichas técnicas |
+| Títulos | **Cormorant Garamond** (Google Fonts) | Serif clásica y refinada, de estética editorial de lujo |
+| Textos y datos | **Inter** (Google Fonts) | Legibilidad en fichas y diapositivas |
 
-- Las dos son gratuitas (licencia SIL Open Font License).
-- Jerarquía: título 32–40 pt · subtítulo 20–24 pt · texto 14–18 pt (diapositivas).
+- Las dos son gratuitas (SIL Open Font License).
+- Títulos grandes y con mucho aire. Mayúsculas espaciadas (*tracking*) para etiquetas cortas: «COLECCIÓN», «EDICIÓN Nº 12/50».
+- Cormorant no debe usarse en tamaños pequeños.
 
-> 🇮🇹 **Da verificare:** è una proposta. Se il logo su Canva usa un altro font, conviene adattare i titoli a quello. Controllate anche che Fraunces e Inter siano disponibili in Canva e in PowerPoint sui PC dove farete la presentazione: se non lo sono, incorporate i font o usate Georgia + Arial come riserva.
+> 🇮🇹 **Da verificare:** se il logo su Canva usa un altro font, adattate i titoli. Controllate che i font ci siano anche sul PC della presentazione.
 
----
+## 7. Tono de voz: *quiet luxury*
 
-## 6. Tono de voz
-
-**Personalidad:** profesional, cálida, mediterránea, con un toque festivo.
+**Personalidad:** sobria, culta, cálida, segura de sí misma. Habla poco y con precisión.
 
 | Somos… | No somos… |
 |--------|-----------|
-| Cercanos pero formales (*usted*) | Coloquiales ni excesivamente técnicos |
-| Concretos: datos de producto, plazos, condiciones | Vagos ni grandilocuentes |
-| Sensoriales: sabor, textura, sonido, color | Fríos ni puramente de catálogo |
-| Orientados al cliente profesional | Orientados solo al producto |
+| Formales (*usted*) y cercanos | Coloquiales ni promocionales |
+| Evocadores: oficio, origen, materia, luz | Técnicos sin necesidad |
+| Selectivos: «por invitación», «por cita» | Masivos: «¡todos invitados!» |
+| Precisos y discretos | Exagerados ni ostentosos |
 
-**Reglas de redacción:**
-
-1. Tratamiento de **usted** en todos los textos comerciales (correos, fichas, diapositivas).
-2. Frases cortas: máximo 20–25 palabras.
-3. Verbos de acción: *descubra, pruebe, solicite, reserve*.
-4. No usar superlativos sin prueba ("la mejor cerámica del mundo").
-5. No incluir datos técnicos sin verificar (apto para horno, lavavajillas, etc.).
+**Vocabulario recomendado:** *pieza, colección, taller, oficio, a medida, edición numerada, por invitación, salón privado, artesanía.*
+**Vocabulario prohibido:** *barato, oferta, descuento, gratis, promoción, precio imbatible*, signos de exclamación y superlativos sin prueba.
 
 **Ejemplos:**
 
-- ✅ «Descubra cómo nuestra cerámica realza cada plato de su carta.»
-- ✅ «Solicite muestras para su establecimiento sin compromiso.»
-- ❌ «¡Mola muchísimo, ven a probarlo!» (demasiado coloquial)
-- ❌ «La cerámica más resistente del mercado.» (afirmación no demostrada)
+- ✅ «Cada pieza nace en el taller y se firma a mano.» *(si se confirma)*
+- ✅ «Le invitamos a descubrir la colección en nuestro salón privado.»
+- ❌ «¡Ven a probar nuestras ofertas exclusivas!»
+- ❌ «La cerámica más lujosa del mundo.»
 
----
+## 8. Principios de marca para todo el proyecto
 
-## 7. Resumen rápido (para copiar en otros archivos)
+1. **Menos es más:** pocas piezas expuestas y bien iluminadas.
+2. **Por invitación:** la experiencia 4C completa se reserva con cita.
+3. **Sin precios a la vista:** las condiciones se comentan en privado.
+4. **Regalos de calidad, no cantidad:** nada de objetos promocionales baratos. Dos niveles: un detalle cuidado para los visitantes y una pieza numerada para los clientes VIP.
+
+## 9. Resumen rápido
 
 ```
-Nombre:     Cuatro Ces
-Eslogan:    «Cerámica con sabor»  (alt.: «Sirve, brinda, canta»)
-Las 4C:     Comida · Carne · Cóctel · Canciones
-Colores:    #1F4FBF azul cobalto · #FFFFFF blanco · #C8553D terracota
-            #F4B41A oro azafrán · #0B1030 azul noche
-Tipografía: Fraunces (títulos) · Inter (texto)   [propuesta]
-Hashtag:    #CuatroCes
-Registro:   formal-comercial, usted, español de España
+Nombre:        Cuatro Ces – lujo artesanal mediterráneo
+Eslogan:       «Cerámica con sabor»  (interno: «Sirve, brinda, canta»)
+Las 4C:        Comida · Carne · Cóctel · Canciones
+Colores:       #0B1030 azul noche (dominante) · #FFFFFF blanco
+               #1F4FBF azul cobalto · #F4B41A oro azafrán (detalle)
+               #C8553D terracota (mínimo)
+Tipografía:    Cormorant Garamond (títulos) · Inter (texto)  [propuesta]
+Hashtag:       #CuatroCes
+Registro:      formal, usted, español de España, quiet luxury
 ```

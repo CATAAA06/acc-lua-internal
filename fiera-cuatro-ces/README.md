@@ -2,13 +2,15 @@
 
 Stand per una fiera di ceramica con esperienza "4C": **Comida, Carne, Cóctel, Canciones**.
 
+**Posizionamento: ultra lusso** (lujo artesanal mediterráneo). Versione 2 dei file 1–3.
+
 ## Stato delle sezioni
 
 | # | Cartella | Stato |
 |---|----------|-------|
-| 1 | `branding/` | ✅ bozza v1 |
-| 2 | `target-clienti/` | ✅ bozza v1 (ipotesi) |
-| 3 | `mostra-prodotto/` | ✅ bozza v1 (prodotti da confermare) |
+| 1 | `branding/` | ✅ bozza v2 (lusso) |
+| 2 | `target-clienti/` | ✅ bozza v2 lusso (ipotesi) |
+| 3 | `mostra-prodotto/` | ✅ bozza v2 lusso (prodotti da confermare) |
 | 4 | `planimetria/` | ⏸ in attesa dei dati dello stand (settimana prossima) |
 | 5 | `allestimento/` | ⏸ dopo la planimetria |
 | 6 | `marketing/` | ⏳ da fare |

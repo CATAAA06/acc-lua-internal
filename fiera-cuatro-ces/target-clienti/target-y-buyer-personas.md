@@ -1,167 +1,143 @@
-# Público objetivo y buyer personas – Cuatro Ces
+# Público objetivo y buyer personas – Cuatro Ces (lujo)
 
-> ⚠️ **HIPÓTESIS DE TRABAJO.** No disponemos todavía de datos oficiales de la feria (nombre, perfil de visitantes, procedencia). Todo este documento es una hipótesis razonada que debe validarse con la lista **«Por verificar»** al final.
->
-> 🇮🇹 **Nota:** le personas sono fittizie e costruite per l'esercizio. Non citate numeri sui visitatori finché non avete i dati ufficiali dell'organizzatore.
+> ⚠️ **HIPÓTESIS DE TRABAJO.** No hay datos oficiales de la feria. Todo debe validarse con la lista **«Por verificar»**.
+> 🇮🇹 Personas fittizie. Nessuna statistica inventata. **Versione 2: posizionamento ultra lusso.**
 
----
+## a) Segmentación de los visitantes
 
-## a) Segmentación de los visitantes de una feria de cerámica
-
-| Segmento | Quiénes son | ¿Qué buscan? | Plausibilidad |
-|----------|-------------|--------------|---------------|
-| **Hostelería y restauración (HORECA)** | Restaurantes, grupos de restauración, hoteles, coctelerías, catering | Vajilla resistente y con personalidad, reposición, presentación de platos | ✅ Plausible |
-| **Interioristas y arquitectos** | Estudios de interiorismo y arquitectura, sobre todo de proyectos de hostelería y retail | Revestimientos, pavimentos, piezas a medida, inspiración | ✅ Plausible |
-| **Distribuidores e importadores** | Mayoristas de menaje profesional, distribuidores de cerámica y azulejos | Nuevas líneas, márgenes, condiciones logísticas, exclusividad por zona | ✅ Plausible |
-| **Tiendas y compradores minoristas** | Tiendas de decoración, concept stores, tiendas de menaje | Producto con historia, pedidos pequeños, material de punto de venta | 🔍 Por verificar (depende del perfil de la feria) |
-| **Constructoras y promotoras** | Empresas de construcción y reformas | Grandes volúmenes de azulejo y pavimento, precio, plazos | 🔍 Por verificar (más típico de ferias de construcción) |
-| **Público general / aficionados** | Consumidores, coleccionistas, estudiantes | Inspiración, compra directa, experiencia | 🔍 Por verificar (solo si la feria abre al público) |
-| **Prensa y creadores de contenido** | Revistas de interiorismo, gastronomía, influencers | Historias visuales, novedades | ✅ Plausible (segmento de apoyo, no de venta) |
-
----
+| Segmento | Quiénes son | Qué buscan | Encaje con el lujo | Plausibilidad |
+|----------|-------------|------------|--------------------|---------------|
+| **Alta restauración y hotelería de lujo** | Hoteles de cinco estrellas, restaurantes gastronómicos, chefs de renombre | Piezas exclusivas, personalización, experiencia de mesa única | ●●● | ✅ Plausible |
+| **Interioristas y arquitectos de proyectos de lujo** | Estudios de hotelería, residencial y retail de alta gama | Revestimientos singulares, piezas a medida, colaboración | ●●● | ✅ Plausible |
+| **Galerías de diseño y *concept stores* de alta gama** | Compradores de tiendas de diseño, galerías, grandes almacenes de lujo | Ediciones limitadas, historia de marca, exclusividad territorial | ●● | ✅ Plausible |
+| Distribuidores generalistas de menaje | Mayoristas HORECA | Volumen, margen, rotación | ● (riesgo de banalizar la marca) | 🔍 Fuera de foco |
+| Constructoras y promotoras | Empresas de obra | Volumen y precio | ● | 🔍 Fuera de foco (salvo promociones de lujo) |
+| Coleccionistas privados | Particulares con alto poder adquisitivo | Piezas únicas | ●● | 🔍 Por verificar (solo si la feria abre al público) |
+| Prensa de lujo, gastronomía e interiorismo | Revistas y creadores de contenido | Historias y novedades | ●●● (imagen) | ✅ Plausible (apoyo, no venta) |
 
 ## b) Público objetivo principal (*core target*)
 
-### Criterios de elección
+| Criterio | Alta restauración y hoteles | Interioristas de lujo | Galerías / *concept stores* |
+|----------|:---------------------------:|:---------------------:|:---------------------------:|
+| Poder de compra | ●●● | ●● (prescriben) | ●● |
+| Influencia y prestigio | ●●● | ●●● | ●● |
+| Encaje con las 4C | ●●● | ●● | ●● |
+| Accesibilidad en feria | ●● | ●● | ●● |
 
-| Criterio | HORECA | Interioristas | Distribuidores | Tiendas | Constructoras | Público general |
-|----------|:------:|:-------------:|:--------------:|:-------:|:-------------:|:---------------:|
-| Poder de compra | ●●● | ●● (prescriben) | ●●● | ●● | ●●● | ● |
-| Influencia en otros compradores | ●● | ●●● | ●●● | ● | ● | ● |
-| Encaje con las 4C | ●●● | ●● | ●● | ●● | ● | ●● |
-| Accesibilidad en feria | ●● | ●● | ●●● | ●● | ● | ●●● |
+*(Valoración cualitativa del grupo, no basada en datos.)*
 
-*(● bajo · ●● medio · ●●● alto — valoración cualitativa del grupo, no basada en datos.)*
+- 🎯 **Principal: alta restauración y hotelería de lujo.** Vive las 4C en su día a día. Una mesa de un restaurante gastronómico o de un hotel de lujo es el mejor **escaparate** posible para la marca.
+- 🥈 **Secundario 1: interioristas de proyectos de lujo.** Eligen los revestimientos (Canciones) y prescriben la vajilla a sus clientes.
+- 🥉 **Secundario 2: galerías de diseño y *concept stores* de alta gama.** Dan visibilidad a las ediciones limitadas con una distribución **selectiva**, coherente con el lujo.
 
-### Decisión (hipótesis)
-
-- 🎯 **Segmento principal: hostelería y restauración (HORECA).**
-  Es el único segmento que **vive las 4C a diario**: sirve comida, presenta carne, prepara cócteles y cuida el ambiente musical. La experiencia del estand reproduce su trabajo real.
-- 🥈 **Segmento secundario 1: interioristas y arquitectos de hostelería.**
-  No compran vajilla en grandes cantidades, pero **eligen los revestimientos** (C de Canciones) y **recomiendan proveedores** a sus clientes de restauración.
-- 🥉 **Segmento secundario 2: distribuidores de menaje profesional.**
-  Multiplican el alcance: un acuerdo con un distribuidor equivale a muchos restaurantes.
-
-> 🇮🇹 **Perché non le imprese di costruzione?** Comprano grandi volumi di piastrelle, ma guardano soprattutto prezzo e tempi e hanno poco legame con Comida, Carne e Cóctel. Le 4C funzionerebbero male con loro.
-
----
+> 🇮🇹 Il distributore generalista esce dal target: nel lusso una distribuzione troppo ampia abbassa il valore percepito. Meglio pochi punti vendita scelti.
 
 ## c) Buyer personas
 
-### Persona 1 – Lucía Ferrer · *La compradora de hostelería* 🎯 (principal)
+### Persona 1 – Elena Castells · *Directora de F&B de un hotel de lujo* 🎯
 
 | Campo | Contenido |
 |-------|-----------|
-| **Cargo** | Responsable de compras y F&B de un grupo de restauración (varios locales) |
-| **Edad orientativa** | 35–45 años |
-| **País / zona** | España – zona mediterránea *(hipótesis)* |
-| **Objetivos** | Renovar la vajilla de los locales; diferenciar la presentación de los platos; controlar el coste por pieza |
-| **Necesidades** | Piezas resistentes al uso intensivo; reposición rápida del mismo modelo; estética coherente con la marca del restaurante |
-| **Problemas (*pain points*)** | Roturas frecuentes; modelos descatalogados que no se pueden reponer; proveedores lentos; vajilla «bonita» que no aguanta el lavavajillas industrial |
-| **Criterios de compra** | Resistencia · disponibilidad de reposición · precio por unidad · plazos de entrega · estética |
-| **Canales preferidos** | LinkedIn, Instagram, ferias del sector, recomendaciones de chefs, correo profesional |
-| **Objeciones** | «¿Aguanta el lavavajillas industrial?» · «¿Podré reponer este modelo dentro de dos años?» · «¿Cuál es el pedido mínimo?» |
-| **Qué busca en un estand** | Tocar y probar el producto en uso real; fichas técnicas claras; poder hablar de condiciones sin perder tiempo |
-| **Cómo la implican las 4C** | **Comida** y **Carne**: ve sus platos servidos en nuestra cerámica · **Cóctel**: imagina la barra de su local · **Canciones**: un ambiente distendido para negociar |
-| **Producto que la atrae** | Platos, cazuelas y fuentes (Comida); bandejas y tablas de presentación (Carne) |
+| **Cargo** | Directora de alimentos y bebidas (F&B) de un hotel de cinco estrellas con restaurante gastronómico |
+| **Edad orientativa** | 40–50 años |
+| **Zona** | España – destino de lujo urbano o costero *(hipótesis)* |
+| **Objetivos** | Crear una experiencia de mesa memorable y coherente con la identidad del hotel; trabajar con el chef en una vajilla propia |
+| **Necesidades** | Piezas exclusivas o personalizadas (monograma, colores); resistencia al servicio diario; reposición garantizada |
+| **Problemas** | La vajilla de lujo de las grandes marcas es la misma que tiene la competencia; plazos largos en piezas a medida; diferencias entre lotes en piezas artesanales |
+| **Criterios de compra** | Exclusividad · artesanía · personalización · fiabilidad del servicio · continuidad de la colección (el precio no es el primer criterio) |
+| **Canales preferidos** | Invitación personal, ferias, recomendación de chefs e interioristas, Instagram, revistas de hotelería de lujo |
+| **Objeciones** | «¿Cómo garantizan la uniformidad de piezas hechas a mano?» · «¿Cuánto tarda una colección a medida?» · «¿Aguanta el ritmo del servicio?» |
+| **Qué busca en un estand** | Calma, privacidad, atención por cita, poder tocar las piezas en un servicio real |
+| **Cómo la implican las 4C** | **Comida** y **Carne**: *chef's table* en el salón privado · **Cóctel**: mixología de autor para su bar · **Canciones**: el ambiente de su hotel |
+| **Producto que la atrae** | Colección de platos y cazuelas a medida; bandejas de presentación |
 
-### Persona 2 – Javier Ortega · *El interiorista de hostelería* 🥈
+### Persona 2 – Javier Ortega · *Interiorista de proyectos de lujo* 🥈
 
 | Campo | Contenido |
 |-------|-----------|
-| **Cargo** | Socio de un estudio de interiorismo especializado en restaurantes y hoteles |
+| **Cargo** | Socio fundador de un estudio de interiorismo de hoteles, restaurantes y residencias de alta gama |
 | **Edad orientativa** | 35–50 años |
-| **País / zona** | España – grandes ciudades *(hipótesis)* |
-| **Objetivos** | Crear espacios memorables y fotografiables; encontrar materiales con identidad; cumplir presupuesto y plazos de obra |
-| **Necesidades** | Muestras físicas; fichas técnicas (formatos, acabados, uso en pared o suelo); posibilidad de personalización |
-| **Problemas (*pain points*)** | Materiales que no coinciden con la muestra; plazos de entrega que retrasan la obra; poca variedad de piezas especiales |
-| **Criterios de compra** | Estética y originalidad · calidad técnica · personalización · plazos · servicio de muestras |
-| **Canales preferidos** | Instagram, Pinterest, revistas de interiorismo, ferias, *showrooms* |
-| **Objeciones** | «¿Lo tenéis en otros colores o formatos?» · «¿Cuánto tarda un pedido a medida?» · «¿Es apto para suelo de alto tránsito?» |
-| **Qué busca en un estand** | Inspiración visual, composiciones reales a escala 1:1, un muestrario fácil de llevar |
-| **Cómo lo implican las 4C** | **Canciones**: la pared y el suelo de azulejos son su «producto» · **Comida/Cóctel**: ve cómo vajilla y revestimiento crean un ambiente coherente |
-| **Producto que lo atrae** | Azulejos de pared y pavimento (Canciones); piezas de vajilla coordinadas con el revestimiento |
+| **Zona** | España – grandes ciudades *(hipótesis)*, con clientes internacionales |
+| **Objetivos** | Firmar espacios únicos y fotografiables; encontrar materiales con historia y oficio |
+| **Necesidades** | Muestras físicas de calidad; piezas especiales y a medida; fichas técnicas para pared y suelo; colaboración directa con el taller |
+| **Problemas** | Materiales «de catálogo» que se repiten en todos los proyectos; muestras que no coinciden con la producción; plazos que retrasan la obra |
+| **Criterios de compra** | Singularidad · calidad de ejecución · personalización · trato directo · plazos |
+| **Canales preferidos** | Instagram, Pinterest, revistas de interiorismo, ferias, visitas a *showrooms* y talleres |
+| **Objeciones** | «¿Pueden desarrollar un diseño exclusivo para mi proyecto?» · «¿Es apto para pavimento de alto tránsito?» · «¿Qué plazo tiene una producción a medida?» |
+| **Qué busca en un estand** | Inspiración, material instalado a escala real, un interlocutor que conozca el oficio |
+| **Cómo lo implican las 4C** | **Canciones**: el salón revestido de azulejos es su «producto» · **Comida/Cóctel**: ve vajilla y revestimiento dialogar en un mismo espacio |
+| **Producto que lo atrae** | Azulejos pintados a mano para pared y suelo; piezas coordinadas con el revestimiento |
 
-### Persona 3 – Andrés Molina · *El distribuidor* 🥉
+### Persona 3 – Sofía Lorente · *Compradora de una galería de diseño* 🥉
 
 | Campo | Contenido |
 |-------|-----------|
-| **Cargo** | Director comercial de una distribuidora de menaje profesional para hostelería |
-| **Edad orientativa** | 45–55 años |
-| **País / zona** | España y Portugal *(hipótesis)* |
-| **Objetivos** | Ampliar el catálogo con líneas que se diferencien; asegurar margen; fidelizar a sus clientes HORECA |
-| **Necesidades** | Condiciones comerciales claras; capacidad de suministro estable; material de venta (catálogos, fotos, muestras) |
-| **Problemas (*pain points*)** | Proveedores pequeños sin capacidad de servir volumen; competencia de producto importado a bajo precio; falta de apoyo de marketing |
-| **Criterios de compra** | Margen · fiabilidad de suministro · exclusividad por zona · apoyo comercial · rotación del producto |
-| **Canales preferidos** | Ferias, LinkedIn, correo y llamada directa, reuniones con cita previa |
-| **Objeciones** | «¿Qué capacidad de producción tenéis?» · «¿Ofrecéis exclusividad?» · «¿Qué margen me queda frente a la competencia?» |
-| **Qué busca en un estand** | Una persona con poder de decisión; un espacio tranquilo para reunirse; tarifas y condiciones |
-| **Cómo lo implican las 4C** | Las 4C le muestran **cómo vender** la gama a sus clientes: una historia lista para su red comercial. **Cóctel**: momento de relación tras la reunión |
-| **Producto que lo atrae** | Toda la gama de vajilla profesional; especialmente líneas de alta rotación (platos, tazas, vasos) |
-
----
+| **Cargo** | Responsable de compras de una galería de diseño y *concept store* de alta gama |
+| **Edad orientativa** | 30–45 años |
+| **Zona** | España y grandes capitales europeas *(hipótesis)* |
+| **Objetivos** | Descubrir marcas con historia antes que la competencia; ofrecer ediciones limitadas a su clientela |
+| **Necesidades** | Exclusividad en su ciudad; piezas con relato (origen, taller, artesano); presentación impecable (estuche, certificado) |
+| **Problemas** | Marcas «de lujo» sin auténtico oficio detrás; producción insuficiente para mantener una línea; poco apoyo de comunicación |
+| **Criterios de compra** | Relato y autenticidad · exclusividad territorial · estética · *packaging* · apoyo de marca |
+| **Canales preferidos** | Instagram, ferias, prensa de diseño, *newsletters* de marcas seleccionadas |
+| **Objeciones** | «¿Ofrecen exclusividad en mi ciudad?» · «¿Cuántas piezas tiene cada edición?» · «¿Qué apoyo de comunicación dan?» |
+| **Qué busca en un estand** | Piezas presentadas como obras, la historia del taller, un contacto directo con la marca |
+| **Cómo la implican las 4C** | **Cóctel**: tazas y vasos de edición limitada, ideales para su tienda · **Canciones**: el ambiente que podría recrear en su espacio |
+| **Producto que la atrae** | Ediciones numeradas de tazas, vasos y jarras; azulejos decorativos sueltos |
 
 ## d) Propuesta de valor por persona
 
 | Persona | Propuesta de valor (ES) | Traducción (IT) |
 |---------|-------------------------|-----------------|
-| **Lucía** (HORECA) | «Vajilla con carácter, pensada para el ritmo de su cocina y fácil de reponer.» | «Stoviglie con carattere, pensate per il ritmo della sua cucina e facili da riassortire.» |
-| **Javier** (interiorista) | «Azulejos y vajilla que cuentan la misma historia en cada rincón de su proyecto.» | «Piastrelle e stoviglie che raccontano la stessa storia in ogni angolo del suo progetto.» |
-| **Andrés** (distribuidor) | «Una gama completa con una historia lista para vender: las 4C trabajan para su red comercial.» | «Una gamma completa con una storia pronta da vendere: le 4C lavorano per la sua rete commerciale.» |
+| **Elena** | «Una vajilla única, creada a mano para la identidad de su hotel.» | «Stoviglie uniche, create a mano per l'identità del suo hotel.» |
+| **Javier** | «Azulejos y piezas a medida que convierten cada proyecto en una obra irrepetible.» | «Piastrelle e pezzi su misura che rendono ogni progetto un'opera irripetibile.» |
+| **Sofía** | «Ediciones limitadas con oficio e historia, en exclusiva para su galería.» | «Edizioni limitate con mestiere e storia, in esclusiva per la sua galleria.» |
 
-> ⚠️ «Fácil de reponer» y «gama completa» son promesas comerciales: mantenedlas solo si la empresa puede garantizar continuidad de modelos y suministro.
+> ⚠️ «Creada a mano», «a medida» y «en exclusiva» son promesas: mantenedlas solo si el producto y la empresa pueden cumplirlas.
 
----
+## e) Recorrido del cliente en la feria
 
-## e) Recorrido del cliente en la feria (*customer journey*)
+| Fase | Qué ocurre | Acciones Cuatro Ces |
+|------|-----------|---------------------|
+| **1. Descubrimiento** | Antes de la feria | Invitación personal impresa (sobre azul noche, logotipo en oro) y digital; cita en el salón privado; presencia discreta en prensa e Instagram |
+| **2. Visita** | Llega al estand | Galería abierta con pocas piezas sobre pedestales; recepción por una persona del equipo que identifica el perfil y ofrece la experiencia |
+| **3. Experiencia 4C** | Salón privado, por cita (30–45 min, *hipótesis*) | *Chef's table* (Comida, Carne), cóctel de autor (Cóctel), música acústica en el salón de azulejos (Canciones) |
+| **4. Conversión** | Final de la experiencia | Elena: propuesta de colección a medida · Javier: estuche de muestras y cita en el taller · Sofía: prerreserva de edición numerada |
+| **5. Seguimiento** | Después de la feria | Nota personal manuscrita + correo en 48–72 h *(objetivo interno)*; visita al taller; propuesta personalizada |
 
-| Fase | Qué ocurre | Acciones Cuatro Ces | Persona clave |
-|------|-----------|---------------------|---------------|
-| **1. Descubrimiento** | Antes y durante la feria, el visitante conoce el estand | Invitaciones personalizadas, publicaciones con #CuatroCes, señalética visible desde el pasillo (las cuatro C de colores) | Todas |
-| **2. Visita** | El visitante entra atraído por el ambiente | Recepción en 30 segundos; pregunta de perfil («¿Restaurante, estudio o distribución?») para dirigir a la C adecuada | Todas |
-| **3. Experiencia 4C** | Prueba el producto en uso real | Degustación servida en cerámica (Comida, Carne), cóctel en taza o vaso de la gama (Cóctel), música en la zona de azulejos (Canciones) | Lucía → Comida/Carne · Javier → Canciones · Andrés → recorrido completo |
-| **4. Conversión** | El interés se convierte en un contacto útil | Lucía: solicitud de muestras o presupuesto · Javier: muestrario de azulejos · Andrés: cita para reunión comercial | Todas |
-| **5. Seguimiento** | Después de la feria | Correo personalizado en 48–72 h *(objetivo interno)* con lo hablado; envío de muestras; llamada o reunión | Todas |
-
-> 🇮🇹 **Nota:** la registrazione dei contatti (badge scanner, modulo digitale, biglietti da visita) va decisa con l'organizzatore. Se raccogliete dati personali in fiera serve un'informativa privacy conforme al GDPR/RGPD: da verificare.
-
----
+> 🇮🇹 Raccolta contatti: serve un'informativa privacy conforme al GDPR/RGPD (da verificare).
 
 ## f) Mensajes clave y tono por público
 
-| Público | Mensaje clave | Tono | Ejemplo de frase |
-|---------|---------------|------|------------------|
-| **HORECA (Lucía)** | Resistencia + estética + reposición | Práctico, concreto, cercano | «Pruebe hoy en nuestro estand la vajilla que podría servir mañana en su restaurante.» |
-| **Interioristas (Javier)** | Identidad, coherencia, personalización | Inspirador, visual, técnico cuando hace falta | «Un mismo lenguaje cerámico, de la pared a la mesa.» |
-| **Distribuidores (Andrés)** | Oportunidad de negocio, apoyo comercial | Directo, orientado a resultados | «Le proponemos una gama diferenciada y una historia que su equipo podrá contar.» |
+| Público | Mensaje clave | Ejemplo |
+|---------|---------------|---------|
+| **Elena** (hotel) | Exclusividad + fiabilidad | «Su mesa merece piezas que nadie más tenga.» |
+| **Javier** (interiorista) | Oficio + libertad creativa | «Del boceto al azulejo: creamos con usted.» |
+| **Sofía** (galería) | Relato + escasez | «Cada edición es limitada. Cada pieza, numerada.» |
 
-**Elemento común a todos:** el eslogan **«Cerámica con sabor»** y el tratamiento de **usted**.
-
----
+Elemento común: **«Cerámica con sabor»**, tratamiento de **usted**, tono *quiet luxury* (ver guía de estilo).
 
 ## g) KPI del estand
 
-> ⚠️ **Los objetivos son HIPOTÉTICOS.** Sirven como ejemplo de método. Deben ajustarse cuando se conozcan la afluencia prevista, la duración de la feria y el número de personas del equipo.
+> ⚠️ **Objetivos HIPOTÉTICOS**, solo como ejemplo de método. En el lujo importa más la **calidad** de los contactos que la cantidad.
 
 | KPI | Cómo se mide | Objetivo hipotético | Persona |
 |-----|--------------|---------------------|---------|
-| Contactos cualificados | Fichas completas (nombre, empresa, perfil, interés) | 20–40 por día *(hipótesis)* | Todas |
-| Proporción de contactos del público principal | % de contactos HORECA sobre el total | ≥ 50 % *(hipótesis)* | Lucía |
-| Tiempo medio de permanencia | Estimación del equipo en franjas horarias (muestreo) | 8–12 min *(hipótesis)* | Todas |
-| Muestras solicitadas | Número de solicitudes de muestra / muestrario | 10–20 en total *(hipótesis)* | Lucía, Javier |
-| Reuniones comerciales | Citas registradas en feria o agendadas para después | 5–10 en total *(hipótesis)* | Andrés |
-| Participación en las 4C | Degustaciones o cócteles servidos | Para calcular según el aforo *(por definir)* | Todas |
-| Repercusión en redes | Publicaciones y menciones con #CuatroCes | Por definir tras conocer la feria | Javier, prensa |
-| Conversión post-feria | Contactos que piden presupuesto en los 60 días siguientes | Por definir | Todas |
-
----
+| Citas en el salón privado | Agenda de reservas | 4–8 por día *(hipótesis, según aforo)* | Todas |
+| Contactos cualificados | Fichas completas con perfil y proyecto | 8–15 por día *(hipótesis)* | Todas |
+| Proporción de contactos del público principal | % hoteles y alta restauración | ≥ 40 % *(hipótesis)* | Elena |
+| Solicitudes de colección a medida | Briefs recibidos | 3–6 en total *(hipótesis)* | Elena, Javier |
+| Estuches de muestras entregados | Registro de entregas | 10–20 en total *(hipótesis)* | Javier |
+| Prerreservas de ediciones numeradas | Formularios firmados | Por definir | Sofía |
+| Tiempo de permanencia en el salón | Duración de las citas | 30–45 min *(hipótesis)* | Todas |
+| Repercusión en prensa especializada | Artículos y menciones | Por definir | Prensa |
 
 ## Por verificar / da verificare
 
-1. **Datos oficiales de la feria:** perfil de visitantes, procedencia, sectores, si es solo profesional o también abierta al público (informe de visitantes del organizador).
-2. **Entrevistas a 3–5 clientes potenciales** (p. ej. 2 restauradores, 1 interiorista, 1–2 distribuidores) para validar necesidades, problemas y objeciones de las personas.
-3. **Características técnicas reales de los productos** (lavavajillas, horno, uso en suelo, etc.) antes de usarlas en los mensajes.
-4. **Normativa de la feria** sobre degustaciones, servicio de alcohol y música en el estand.
-5. **Política de privacidad (RGPD)** para la recogida de contactos.
-6. **Zona geográfica** de las personas (España/Portugal es una hipótesis ligada al idioma del proyecto).
-7. **Marca «Cuatro Ces»:** disponibilidad en EUIPO y OEPM.
+1. Datos oficiales de visitantes de la feria (perfil, procedencia, presencia de hotelería de lujo).
+2. Entrevistas a 3–5 clientes potenciales (1–2 hoteles o restaurantes, 1 interiorista, 1 galería).
+3. Realidad del producto: hecho a mano, ediciones numeradas, personalización, capacidad de producción.
+4. Normativa de la feria: degustaciones, cocina, alcohol, música, espacios cerrados.
+5. RGPD para la recogida de contactos.
+6. Zona geográfica de las personas.
+7. Marca «Cuatro Ces» en EUIPO y OEPM.
