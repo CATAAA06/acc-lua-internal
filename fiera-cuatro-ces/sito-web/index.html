@@ -1,0 +1,1512 @@
+<title>Cuatro Ces</title>
+<meta name="description" content="Cuatro Ces – cerámica de lujo artesanal mediterráneo. Prototipo conceptual.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600&display=swap">
+<style>
+/* Layout: galería nocturna. Salas azul noche, una banda blanca de galería, piezas iluminadas como objetos de museo. */
+:root {
+  --noche: #0B1030;
+  --noche-2: #111845;
+  --noche-3: #1B2459;
+  --blanco: #FFFFFF;
+  --cobalto: #1F4FBF;
+  --cobalto-luz: #8FAAF0;
+  --azafran: #F4B41A;
+  --terracota: #C8553D;
+  --texto: #FFFFFF;
+  --texto-2: #BCC3E6;
+  --texto-oscuro: #0B1030;
+  --texto-oscuro-2: #4A5170;
+  --linea: rgba(255, 255, 255, 0.14);
+  --linea-oscura: rgba(11, 16, 48, 0.14);
+  --display: "Cormorant Garamond", "Cormorant", Georgia, "Times New Roman", serif;
+  --sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --radio: 6px;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--noche);
+  color: var(--texto);
+  font-family: var(--sans);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3 { font-family: var(--display); font-weight: 500; line-height: 1.08; margin: 0; text-wrap: balance; letter-spacing: 0.005em; }
+p { margin: 0; }
+a { color: inherit; }
+button, input, select, textarea { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--azafran); outline-offset: 3px; }
+.wrap { max-width: 1180px; margin-inline: auto; padding-inline: clamp(16px, 4vw, 40px); }
+.eyebrow { font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--texto-2); font-weight: 500; }
+.section { padding-block: clamp(64px, 9vw, 120px); }
+.section-head { display: grid; gap: 14px; max-width: 640px; margin-bottom: clamp(32px, 5vw, 56px); }
+.section-head h2 { font-size: clamp(38px, 5.4vw, 64px); }
+.section-head p { color: var(--texto-2); font-size: 17px; }
+.chip-render {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase;
+  color: var(--texto-2); border: 1px solid var(--linea); border-radius: 999px; padding: 4px 12px;
+}
+.chip-render::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--azafran); }
+
+/* Nav */
+.nav {
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20;
+  background: rgba(11, 16, 48, 0.82); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--linea);
+}
+.nav .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 64px; }
+.brand { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+.brand-word { white-space: nowrap; font-family: var(--display); font-size: 24px; letter-spacing: 0.06em; font-weight: 600; }
+.nav-links { display: flex; gap: 22px; list-style: none; margin: 0; padding: 0; font-size: 14px; }
+.nav-links a { text-decoration: none; color: var(--texto-2); transition: color .2s; }
+.nav-links a:hover { color: var(--texto); }
+.nav-tools { display: flex; align-items: center; gap: 10px; }
+.lang { display: inline-flex; border: 1px solid var(--linea); border-radius: 999px; padding: 2px; }
+.lang button { background: none; border: 0; padding: 4px 10px; border-radius: 999px; font-size: 12px; letter-spacing: 0.1em; cursor: pointer; color: var(--texto-2); }
+.lang button[aria-pressed="true"] { background: var(--blanco); color: var(--noche); }
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+  padding: 12px 22px; border-radius: 999px; border: 1px solid var(--blanco);
+  background: var(--blanco); color: var(--noche); text-decoration: none; font-weight: 500; font-size: 15px;
+  cursor: pointer; transition: transform .2s, background .2s, color .2s;
+}
+.btn:hover { transform: translateY(-1px); }
+.btn.ghost { background: transparent; color: var(--texto); border-color: var(--linea); }
+.btn.ghost:hover { border-color: var(--blanco); }
+.btn.small { padding: 8px 16px; font-size: 13px; }
+.btn.gold { background: var(--azafran); border-color: var(--azafran); color: var(--noche); }
+
+/* Hero */
+.hero { position: relative; overflow: hidden; border-bottom: 1px solid var(--linea); }
+.hero::before {
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  background: radial-gradient(60% 70% at 72% 45%, rgba(31, 79, 191, 0.35), transparent 70%);
+}
+.hero .wrap { position: relative; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); align-items: center; gap: 24px; padding-block: clamp(40px, 6vw, 72px); }
+.hero-text { display: grid; gap: 22px; min-width: 0; }
+.hero h1 { font-size: clamp(64px, 10vw, 128px); font-weight: 500; letter-spacing: 0.01em; }
+.slogan { font-family: var(--display); font-style: italic; font-size: clamp(26px, 3vw, 36px); color: var(--azafran); }
+.hero-lead { color: var(--texto-2); font-size: 18px; max-width: 460px; }
+.hero-ctas { display: flex; flex-wrap: wrap; gap: 12px; }
+.hero-stage { position: relative; aspect-ratio: 1 / 1; max-width: 100%; min-width: 0; }
+.hero-stage canvas, .stage canvas { width: 100%; height: 100%; display: block; }
+.fallback { position: absolute; inset: 0; display: grid; place-items: center; text-align: center; gap: 12px; padding: 24px; }
+.fallback img { width: min(70%, 380px); border-radius: 4px; box-shadow: 0 30px 60px rgba(0,0,0,.45); }
+.fallback p { font-size: 13px; color: var(--texto-2); }
+.hero-caption { position: absolute; left: 0; bottom: 8px; }
+
+/* Galería (banda blanca) */
+.gallery { background: var(--blanco); color: var(--texto-oscuro); }
+.gallery .eyebrow { color: var(--texto-oscuro-2); }
+.manifesto { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(32px, 6vw, 96px); align-items: end; }
+.manifesto h2 { font-size: clamp(40px, 5.6vw, 72px); }
+.manifesto p { font-size: 18px; color: var(--texto-oscuro-2); max-width: 520px; }
+.pillars { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 0; margin-top: clamp(48px, 6vw, 80px); border-top: 1px solid var(--linea-oscura); }
+.pillar { padding: 24px 20px 8px 0; display: grid; gap: 8px; align-content: start; min-width: 0; }
+.pillar + .pillar { padding-left: 20px; border-left: 1px solid var(--linea-oscura); }
+.pillar .num { font-family: var(--display); font-size: 15px; color: var(--cobalto); letter-spacing: 0.1em; }
+.pillar h3 { font-size: 26px; }
+.pillar p { font-size: 14px; color: var(--texto-oscuro-2); }
+
+/* Showroom 4C */
+.showroom { display: grid; grid-template-columns: minmax(0, 340px) minmax(0, 1fr); gap: clamp(24px, 4vw, 56px); align-items: start; }
+.tabs { display: grid; gap: 8px; }
+.tab {
+  display: grid; grid-template-columns: 44px 1fr; align-items: center; gap: 14px; text-align: left;
+  padding: 14px 16px; background: transparent; border: 1px solid var(--linea); border-radius: var(--radio); cursor: pointer;
+  transition: background .2s, border-color .2s;
+}
+.tab:hover { border-color: rgba(255,255,255,.35); }
+.tab[aria-selected="true"] { background: var(--noche-2); border-color: var(--acc, var(--cobalto)); }
+.tab .tl { font-family: var(--display); font-size: 34px; line-height: 1; color: var(--acc, var(--cobalto-luz)); text-align: center; }
+.tab .tn { display: grid; gap: 2px; min-width: 0; }
+.tab .tn strong { font-weight: 500; font-size: 16px; }
+.tab .tn span { font-size: 13px; color: var(--texto-2); }
+.line-info { margin-top: 24px; display: grid; gap: 12px; }
+.line-info h3 { font-size: 32px; }
+.line-info p { color: var(--texto-2); }
+.line-items { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 4px; list-style: none; padding: 0; }
+.line-items li { font-size: 13px; border: 1px solid var(--linea); border-radius: 999px; padding: 4px 12px; color: var(--texto); }
+.stage-wrap { display: grid; gap: 12px; min-width: 0; }
+.stage {
+  position: relative; aspect-ratio: 4 / 3; max-width: 100%; border-radius: var(--radio); overflow: hidden;
+  background: radial-gradient(80% 80% at 50% 35%, var(--noche-3), var(--noche) 75%);
+  border: 1px solid var(--linea); touch-action: pan-y;
+}
+.stage-meta { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; font-size: 13px; color: var(--texto-2); }
+
+/* Taller */
+.taller { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr); gap: clamp(24px, 4vw, 56px); align-items: start; }
+.controls { display: grid; gap: 24px; }
+.ctrl { display: grid; gap: 10px; border: 0; margin: 0; padding: 0; min-width: 0; }
+.ctrl legend { padding: 0; margin-bottom: 10px; font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--texto-2); }
+.opts { display: flex; flex-wrap: wrap; gap: 8px; }
+.opt {
+  display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px; border-radius: 999px;
+  border: 1px solid var(--linea); background: transparent; cursor: pointer; font-size: 14px;
+}
+.opt[aria-pressed="true"] { border-color: var(--blanco); background: var(--noche-2); }
+.swatch { width: 14px; height: 14px; border-radius: 50%; border: 1px solid rgba(255,255,255,.4); }
+.preview { position: relative; display: grid; gap: 12px; min-width: 0; }
+.preview canvas { width: 100%; max-width: 100%; aspect-ratio: 1 / 1; height: auto; border-radius: var(--radio); display: block; box-shadow: 0 40px 80px rgba(0,0,0,.4); }
+.ref { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; font-size: 13px; color: var(--texto-2); font-variant-numeric: tabular-nums; }
+.ref strong { color: var(--texto); font-weight: 500; letter-spacing: 0.08em; }
+
+/* Innovación */
+.innov { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 24px; }
+.card { border: 1px solid var(--linea); border-radius: var(--radio); padding: clamp(20px, 3vw, 32px); display: grid; gap: 16px; align-content: start; background: linear-gradient(180deg, var(--noche-2), var(--noche)); min-width: 0; }
+.card h3 { font-size: 34px; }
+.card p { color: var(--texto-2); }
+.seg { display: inline-grid; grid-template-columns: 1fr 1fr; border: 1px solid var(--linea); border-radius: 999px; padding: 3px; gap: 3px; max-width: 100%; }
+.seg button { border: 0; background: transparent; border-radius: 999px; padding: 8px 12px; font-size: 13px; cursor: pointer; color: var(--texto-2); }
+.seg button[aria-pressed="true"] { background: var(--blanco); color: var(--noche); }
+.audio-row { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
+.decay { width: 100%; max-width: 100%; height: auto; aspect-ratio: 2.4 / 1; display: block; border-radius: 4px; background: rgba(255,255,255,.03); }
+.note { font-size: 12px; color: var(--texto-2); }
+
+.passport { perspective: 1400px; }
+.pp-inner { position: relative; transition: transform .9s cubic-bezier(.2,.7,.2,1); transform-style: preserve-3d; min-height: 360px; }
+.passport.flipped .pp-inner { transform: rotateY(180deg); }
+.pp-face { position: absolute; inset: 0; backface-visibility: hidden; -webkit-backface-visibility: hidden; border-radius: var(--radio); border: 1px solid var(--linea); padding: 20px; display: grid; gap: 12px; align-content: start; background: var(--noche-2); }
+.pp-front { place-items: center; text-align: center; align-content: center; }
+.pp-front canvas { width: 180px; height: 180px; }
+.pp-back { transform: rotateY(180deg); background: var(--blanco); color: var(--texto-oscuro); }
+.pp-back dl { display: grid; grid-template-columns: auto 1fr; gap: 8px 16px; margin: 0; font-size: 14px; }
+.pp-back dt { color: var(--texto-oscuro-2); }
+.pp-back dd { margin: 0; font-weight: 500; }
+.pp-tag { justify-self: start; font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--blanco); background: var(--cobalto); border-radius: 999px; padding: 3px 10px; }
+.nfc { position: relative; width: 64px; height: 64px; border-radius: 50%; border: 1px solid var(--linea); display: grid; place-items: center; }
+.nfc::after { content: ""; position: absolute; inset: -1px; border-radius: 50%; border: 1px solid var(--azafran); opacity: 0; }
+.passport.reading .nfc::after { animation: ripple 1s ease-out 2; }
+@keyframes ripple { from { transform: scale(1); opacity: .9; } to { transform: scale(2.2); opacity: 0; } }
+
+/* Cuarteto */
+.cuarteto { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(24px, 5vw, 72px); align-items: start; }
+.motto, .section-head .motto { font-family: var(--display); font-style: italic; font-size: clamp(26px, 3vw, 34px); color: var(--azafran); }
+.steps { list-style: none; padding: 0; margin: 24px 0 0; display: grid; gap: 0; border-top: 1px solid var(--linea); }
+.steps li { display: grid; grid-template-columns: 48px 1fr; gap: 12px; padding: 14px 0; border-bottom: 1px solid var(--linea); align-items: baseline; transition: color .3s; color: var(--texto-2); }
+.steps li .rn { font-family: var(--display); font-size: 22px; color: var(--texto-2); }
+.steps li.on { color: var(--texto); }
+.steps li.on .rn { color: var(--azafran); }
+.board { display: grid; gap: 20px; justify-items: center; min-width: 0; }
+.grid2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px; width: min(100%, 380px); padding: 6px; border: 1px dashed var(--linea); border-radius: 8px; transition: border-color .4s, box-shadow .4s; }
+.grid2.complete { border: 1px solid var(--azafran); box-shadow: 0 0 0 6px rgba(244,180,26,.08); }
+.slot { position: relative; aspect-ratio: 1 / 1; border-radius: 4px; background: rgba(255,255,255,.03); display: grid; place-items: center; }
+.slot > .slot-n { font-family: var(--display); font-size: 28px; color: rgba(255,255,255,.18); }
+.tray { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; min-height: 100px; width: 100%; }
+.coaster { position: relative; width: 84px; aspect-ratio: 1 / 1; padding: 0; border: 0; border-radius: 4px; cursor: pointer; background: var(--blanco); box-shadow: 0 12px 24px rgba(0,0,0,.4); transform: rotate(var(--rot, 0deg)); transition: box-shadow .2s; }
+.coaster img { width: 100%; height: 100%; display: block; border-radius: 4px; }
+.coaster .badge { position: absolute; right: -8px; top: -8px; min-width: 26px; height: 26px; border-radius: 13px; padding: 0 6px; display: grid; place-items: center; background: var(--noche); border: 1px solid var(--azafran); color: var(--azafran); font-family: var(--display); font-size: 15px; }
+.slot .coaster { position: absolute; inset: 0; width: 100%; transform: none; box-shadow: none; cursor: default; }
+.slot .coaster .badge { opacity: 0; }
+.cu-actions { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+.done-msg { min-height: 1.6em; text-align: center; font-family: var(--display); font-size: 24px; color: var(--azafran); }
+
+/* Cita */
+.cita { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: clamp(24px, 5vw, 72px); align-items: start; }
+form { display: grid; gap: 16px; }
+.field { display: grid; gap: 6px; min-width: 0; }
+.field label { font-size: 13px; color: var(--texto-2); }
+.field input, .field select, .field textarea { width: 100%; padding: 12px 14px; border-radius: var(--radio); border: 1px solid var(--linea); background: var(--noche-2); }
+.field textarea { min-height: 96px; resize: vertical; }
+.two { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 16px; }
+.confirm { border: 1px solid var(--azafran); border-radius: var(--radio); padding: 20px; display: grid; gap: 12px; }
+
+footer { border-top: 1px solid var(--linea); padding-block: 48px; color: var(--texto-2); font-size: 13px; }
+footer .wrap { display: grid; gap: 18px; }
+footer .f-top { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; align-items: baseline; }
+footer .f-slogan { font-family: var(--display); font-style: italic; font-size: 28px; color: var(--texto); }
+footer p { max-width: 760px; }
+
+@media (max-width: 960px) {
+  .nav-links { display: none; }
+  .hero .wrap, .manifesto, .showroom, .taller, .innov, .cuarteto, .cita { grid-template-columns: minmax(0, 1fr); }
+  .hero-stage { order: -1; max-width: 520px; width: 100%; justify-self: center; }
+  .pillars { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .pillar, .pillar + .pillar { padding: 20px 16px 16px 0; border-left: 0; border-bottom: 1px solid var(--linea-oscura); }
+  .tabs { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .hero-stage { display: grid; aspect-ratio: auto; }
+  .hero-stage canvas { aspect-ratio: 1 / 1; height: auto; }
+  .hero-caption { position: static; justify-self: start; margin-top: 8px; }
+}
+@media (max-width: 520px) {
+  .pillars { grid-template-columns: minmax(0, 1fr); }
+  .two { grid-template-columns: minmax(0, 1fr); }
+  .tab { grid-template-columns: 32px 1fr; padding: 12px; gap: 10px; }
+  .tab .tl { font-size: 28px; }
+  .brand-word { font-size: 19px; letter-spacing: 0.04em; }
+  .nav-tools .btn { display: none; }
+  .coaster { width: 68px; }
+  .stage { aspect-ratio: 1 / 1; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
+}
+</style>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#inicio" id="logo-slot" aria-label="Cuatro Ces">
+      <span class="brand-word">CUATRO CES</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#coleccion" data-i18n="nav_4c">Las 4C</a></li>
+      <li><a href="#taller" data-i18n="nav_taller">Taller</a></li>
+      <li><a href="#innovacion" data-i18n="nav_innov">Innovación</a></li>
+      <li><a href="#cuarteto" data-i18n="nav_cuarteto">Cuarteto</a></li>
+    </ul>
+    <div class="nav-tools">
+      <div class="lang" role="group" aria-label="Idioma / Lingua">
+        <button type="button" id="lang-es" data-lang="es" aria-pressed="true">ES</button>
+        <button type="button" id="lang-it" data-lang="it" aria-pressed="false">IT</button>
+      </div>
+      <a class="btn small" href="#cita" data-i18n="nav_cta">Solicitar cita</a>
+    </div>
+  </div>
+</header>
+
+<main id="inicio">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap">
+      <div class="hero-text">
+        <span class="eyebrow" data-i18n="hero_eyebrow">Lujo artesanal mediterráneo</span>
+        <h1 id="hero-title">Cuatro Ces</h1>
+        <p class="slogan">«Cerámica con sabor»</p>
+        <p class="hero-lead" data-i18n="hero_lead">Piezas hechas y pintadas a mano para la alta restauración, la hotelería de lujo y los interiores más exigentes.</p>
+        <div class="hero-ctas">
+          <a class="btn" href="#coleccion" data-i18n="hero_cta1">Descubra las 4C</a>
+          <a class="btn ghost" href="#cita" data-i18n="hero_cta2">Solicitar una cita</a>
+        </div>
+      </div>
+      <div class="hero-stage" id="hero-stage">
+        <canvas id="hero-canvas" aria-label="Render 3D de cuatro azulejos" role="img"></canvas>
+        <div class="fallback" id="hero-fallback">
+          <img id="hero-fallback-img" alt="">
+        </div>
+        <span class="chip-render hero-caption" data-i18n="hero_caption">Render 3D · cuatro azulejos, cuatro experiencias</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery section" aria-labelledby="man-title">
+    <div class="wrap">
+      <div class="manifesto">
+        <div style="display:grid;gap:16px">
+          <span class="eyebrow" data-i18n="man_eyebrow">Manifiesto</span>
+          <h2 id="man-title" data-i18n="man_title">Cada pieza, una obra. Cada visita, una invitación.</h2>
+        </div>
+        <p data-i18n="man_body">Cuatro Ces nace de una idea sencilla: la cerámica se entiende cuando se usa. Por eso no la exponemos, la servimos. Comida, Carne, Cóctel y Canciones son las cuatro maneras de vivirla, en la mesa y en el espacio.</p>
+      </div>
+      <div class="pillars">
+        <div class="pillar"><span class="num">I</span><h3 data-i18n="p1_t">Artesanía</h3><p data-i18n="p1_d">Hecha y pintada a mano en el taller.</p></div>
+        <div class="pillar"><span class="num">II</span><h3 data-i18n="p2_t">Exclusividad</h3><p data-i18n="p2_d">Ediciones limitadas y numeradas.</p></div>
+        <div class="pillar"><span class="num">III</span><h3 data-i18n="p3_t">A medida</h3><p data-i18n="p3_d">Monograma, color y forma para cada cliente.</p></div>
+        <div class="pillar"><span class="num">IV</span><h3 data-i18n="p4_t">Autenticidad</h3><p data-i18n="p4_d">Certificado y pasaporte digital de cada pieza.</p></div>
+        <div class="pillar"><span class="num">V</span><h3 data-i18n="p5_t">Servicio</h3><p data-i18n="p5_d">Atención por cita y reposición garantizada.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="coleccion" aria-labelledby="sh-title">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow" data-i18n="sh_eyebrow">La colección</span>
+        <h2 id="sh-title" data-i18n="sh_title">Las 4C</h2>
+        <p data-i18n="sh_sub">Cuatro líneas, una para cada momento. Gire cada pieza con el ratón o con el dedo.</p>
+      </div>
+      <div class="showroom">
+        <div>
+          <div class="tabs" role="tablist" aria-label="Las 4C">
+            <button class="tab" role="tab" id="tab-mesa" data-line="mesa" aria-selected="true" aria-controls="stage" style="--acc: var(--terracota)"><span class="tl">C</span><span class="tn"><strong>Comida</strong><span data-i18n="mesa_line">Línea Mesa</span></span></button>
+            <button class="tab" role="tab" id="tab-ritual" data-line="ritual" aria-selected="false" aria-controls="stage" style="--acc: var(--terracota)"><span class="tl">C</span><span class="tn"><strong>Carne</strong><span data-i18n="ritual_line">Línea Ritual</span></span></button>
+            <button class="tab" role="tab" id="tab-brindis" data-line="brindis" aria-selected="false" aria-controls="stage" style="--acc: var(--azafran)"><span class="tl">C</span><span class="tn"><strong>Cóctel</strong><span data-i18n="brindis_line">Línea Brindis</span></span></button>
+            <button class="tab" role="tab" id="tab-acorde" data-line="acorde" aria-selected="false" aria-controls="stage" style="--acc: var(--cobalto-luz)"><span class="tl">C</span><span class="tn"><strong>Canciones</strong><span data-i18n="acorde_line">Línea Acorde</span></span></button>
+          </div>
+          <div class="line-info" aria-live="polite">
+            <h3 id="line-title"></h3>
+            <p id="line-body"></p>
+            <ul class="line-items" id="line-items"></ul>
+          </div>
+        </div>
+        <div class="stage-wrap">
+          <div class="stage" id="stage" role="tabpanel" aria-labelledby="tab-mesa">
+            <canvas id="stage-canvas" role="img" aria-label="Render 3D de la línea seleccionada"></canvas>
+            <div class="fallback" id="stage-fallback">
+              <img id="stage-fallback-img" alt="">
+              <p data-i18n="fallback_3d">La vista 3D no está disponible en este navegador.</p>
+            </div>
+          </div>
+          <div class="stage-meta">
+            <span class="chip-render" data-i18n="sh_caption">Render 3D generado por ordenador · concepto, no fotografía de producto</span>
+            <span data-i18n="sh_drag">Arrastre para girar · rueda o pellizco para acercar</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="taller" aria-labelledby="tl-title" style="background: var(--noche-2); border-block: 1px solid var(--linea);">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow" data-i18n="tl_eyebrow">A medida</span>
+        <h2 id="tl-title" data-i18n="tl_title">Taller de azulejos</h2>
+        <p data-i18n="tl_sub">Diseñe su azulejo: elija motivo, color y acabado. Así empieza cada proyecto a medida.</p>
+      </div>
+      <div class="taller">
+        <div class="controls">
+          <fieldset class="ctrl">
+            <legend data-i18n="tl_motif">Motivo</legend>
+            <div class="opts" data-group="motif">
+              <button type="button" class="opt" id="m-estrella" data-val="estrella" aria-pressed="true" data-i18n="m_estrella">Estrella</button>
+              <button type="button" class="opt" id="m-flor" data-val="flor" aria-pressed="false" data-i18n="m_flor">Flor</button>
+              <button type="button" class="opt" id="m-ola" data-val="ola" aria-pressed="false" data-i18n="m_ola">Ola</button>
+              <button type="button" class="opt" id="m-celosia" data-val="celosia" aria-pressed="false" data-i18n="m_celosia">Celosía</button>
+            </div>
+          </fieldset>
+          <fieldset class="ctrl">
+            <legend data-i18n="tl_color">Color</legend>
+            <div class="opts" data-group="color">
+              <button type="button" class="opt" id="c-cobalto" data-val="cobalto" aria-pressed="true"><span class="swatch" style="background:#1F4FBF"></span><span data-i18n="c_cobalto">Azul cobalto</span></button>
+              <button type="button" class="opt" id="c-noche" data-val="noche" aria-pressed="false"><span class="swatch" style="background:#0B1030"></span><span data-i18n="c_noche">Azul noche</span></button>
+              <button type="button" class="opt" id="c-terracota" data-val="terracota" aria-pressed="false"><span class="swatch" style="background:#C8553D"></span><span data-i18n="c_terracota">Terracota</span></button>
+              <button type="button" class="opt" id="c-azafran" data-val="azafran" aria-pressed="false"><span class="swatch" style="background:#F4B41A"></span><span data-i18n="c_azafran">Oro azafrán</span></button>
+            </div>
+          </fieldset>
+          <fieldset class="ctrl">
+            <legend data-i18n="tl_finish">Acabado</legend>
+            <div class="opts" data-group="finish">
+              <button type="button" class="opt" id="f-brillo" data-val="brillo" aria-pressed="true" data-i18n="f_brillo">Brillante</button>
+              <button type="button" class="opt" id="f-mate" data-val="mate" aria-pressed="false" data-i18n="f_mate">Mate</button>
+            </div>
+          </fieldset>
+          <fieldset class="ctrl">
+            <legend data-i18n="tl_version">Versión</legend>
+            <div class="opts" data-group="version">
+              <button type="button" class="opt" id="v-deco" data-val="deco" aria-pressed="true" data-i18n="v_deco">Decorativa</button>
+              <button type="button" class="opt" id="v-fono" data-val="fono" aria-pressed="false" data-i18n="v_fono">Fonoabsorbente (en desarrollo)</button>
+            </div>
+          </fieldset>
+          <div><button type="button" class="btn" id="view3d" data-i18n="tl_view3d">Ver en la pared 3D</button></div>
+        </div>
+        <div class="preview">
+          <canvas id="tile-preview" width="900" height="900" role="img" aria-label="Vista previa del azulejo"></canvas>
+          <div class="ref"><span data-i18n="tl_ref">Referencia de ejemplo</span><strong id="tile-ref"></strong></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="innovacion" aria-labelledby="in-title">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow" data-i18n="in_eyebrow">Innovación discreta</span>
+        <h2 id="in-title" data-i18n="in_title">Diseño contemporáneo, alma artesanal</h2>
+        <p data-i18n="in_sub">La innovación está al servicio del oficio: mejora los espacios y protege el valor de cada pieza.</p>
+      </div>
+      <div class="innov">
+        <article class="card" aria-labelledby="au-title">
+          <span class="eyebrow">Acorde</span>
+          <h3 id="au-title" data-i18n="au_title">Escuche la diferencia</h3>
+          <p data-i18n="au_body">Los azulejos Acorde, en desarrollo, están pensados para reducir la reverberación de las salas. Escuche la misma melodía en una sala de superficies duras y en una sala revestida con Acorde.</p>
+          <div class="seg" role="group" aria-label="Sala">
+            <button type="button" id="room-hard" aria-pressed="true" data-i18n="au_hard">Superficies duras</button>
+            <button type="button" id="room-soft" aria-pressed="false" data-i18n="au_soft">Azulejos Acorde</button>
+          </div>
+          <canvas class="decay" id="decay" width="720" height="300" role="img" aria-label="Curva de decaimiento del sonido en la simulación"></canvas>
+          <div class="audio-row">
+            <button type="button" class="btn" id="play" data-i18n="au_play">Escuchar</button>
+            <span class="note" data-i18n="au_note">Simulación ilustrativa generada en el navegador. No es una medición acústica.</span>
+          </div>
+        </article>
+        <article class="card" aria-labelledby="pa-title">
+          <span class="eyebrow" data-i18n="pa_eyebrow">Autenticidad</span>
+          <h3 id="pa-title" data-i18n="pa_title">Pasaporte digital</h3>
+          <p data-i18n="pa_body">Cada pieza lleva un certificado con chip NFC o código QR. Al acercar el teléfono se abre su historia: taller, artesano y número de edición.</p>
+          <div class="passport" id="passport">
+            <div class="pp-inner">
+              <div class="pp-face pp-front">
+                <canvas id="pp-plate" width="360" height="360" aria-hidden="true"></canvas>
+                <div class="nfc" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#F4B41A" stroke-width="1.5" stroke-linecap="round"><path d="M6 8.5a6 6 0 0 1 0 7"/><path d="M9.5 6a9.5 9.5 0 0 1 0 12"/><path d="M13 3.5a13 13 0 0 1 0 17"/></svg></div>
+                <button type="button" class="btn small" id="pp-tap" data-i18n="pa_btn">Acercar el teléfono</button>
+              </div>
+              <div class="pp-face pp-back" aria-live="polite">
+                <span class="pp-tag" data-i18n="pa_example">Ejemplo</span>
+                <dl>
+                  <dt data-i18n="pa_k_piece">Pieza</dt><dd data-i18n="pa_v_piece">Plato llano · Línea Mesa</dd>
+                  <dt data-i18n="pa_k_ed">Edición</dt><dd style="font-variant-numeric: tabular-nums">12 / 50</dd>
+                  <dt data-i18n="pa_k_taller">Taller</dt><dd data-i18n="pa_v_taller">Nombre del taller</dd>
+                  <dt data-i18n="pa_k_art">Artesano</dt><dd data-i18n="pa_v_art">Nombre del artesano</dd>
+                  <dt data-i18n="pa_k_date">Cocción</dt><dd data-i18n="pa_v_date">Fecha de cocción</dd>
+                  <dt data-i18n="pa_k_cert">Certificado</dt><dd data-i18n="pa_v_cert">Pieza original</dd>
+                </dl>
+                <button type="button" class="btn small ghost" id="pp-back" style="justify-self:start;color:var(--texto-oscuro);border-color:var(--linea-oscura)" data-i18n="pa_back">Volver</button>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="cuarteto" aria-labelledby="cu-title" style="background: var(--noche-2); border-block: 1px solid var(--linea);">
+    <div class="wrap">
+      <div class="cuarteto">
+        <div>
+          <div class="section-head" style="margin-bottom:0">
+            <span class="eyebrow" data-i18n="cu_eyebrow">Obsequio de feria</span>
+            <h2 id="cu-title">Cuarteto</h2>
+            <p class="motto">«Cada pieza es una voz. Reúna el cuarteto.»</p>
+            <p data-i18n="cu_body">Cuatro posavasos de cerámica numerados del I al IV. Juntos forman un único dibujo. El primero se entrega en la feria; los demás llegan con cada paso de la relación.</p>
+          </div>
+          <ol class="steps" id="steps">
+            <li data-n="1"><span class="rn">I</span><span data-i18n="cu_s1">En la feria</span></li>
+            <li data-n="2"><span class="rn">II</span><span data-i18n="cu_s2">Tras la cita en el salón privado</span></li>
+            <li data-n="3"><span class="rn">III</span><span data-i18n="cu_s3">Con la visita al taller o un proyecto a medida</span></li>
+            <li data-n="4"><span class="rn">IV</span><span data-i18n="cu_s4">Con el primer pedido</span></li>
+          </ol>
+        </div>
+        <div class="board">
+          <div class="grid2" id="grid2">
+            <div class="slot" data-slot="1"><span class="slot-n">I</span></div>
+            <div class="slot" data-slot="2"><span class="slot-n">II</span></div>
+            <div class="slot" data-slot="3"><span class="slot-n">III</span></div>
+            <div class="slot" data-slot="4"><span class="slot-n">IV</span></div>
+          </div>
+          <p class="note" data-i18n="cu_hint">Toque cada posavasos para colocarlo en su lugar.</p>
+          <div class="tray" id="tray"></div>
+          <p class="done-msg" id="done-msg" aria-live="polite"></p>
+          <div class="cu-actions">
+            <button type="button" class="btn small" id="cu-all" data-i18n="cu_all">Reunir el cuarteto</button>
+            <button type="button" class="btn small ghost" id="cu-reset" data-i18n="cu_reset">Empezar de nuevo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="cita" aria-labelledby="ci-title">
+    <div class="wrap">
+      <div class="cita">
+        <div class="section-head">
+          <span class="eyebrow" data-i18n="ci_eyebrow">Por invitación</span>
+          <h2 id="ci-title" data-i18n="ci_title">Salón privado</h2>
+          <p data-i18n="ci_body">La experiencia completa de las 4C se vive por cita: un breve menú, un cóctel de autor y música en directo, en un espacio revestido de azulejos Acorde.</p>
+        </div>
+        <div>
+          <form id="cita-form" novalidate>
+            <div class="two">
+              <div class="field"><label for="f-name" data-i18n="f_name">Nombre y apellidos</label><input id="f-name" name="name" autocomplete="name" required></div>
+              <div class="field"><label for="f-company" data-i18n="f_company">Empresa</label><input id="f-company" name="company" autocomplete="organization"></div>
+            </div>
+            <div class="two">
+              <div class="field"><label for="f-profile" data-i18n="f_profile">Perfil</label>
+                <select id="f-profile" name="profile">
+                  <option value="hotel" data-i18n="f_p_hotel">Hotel o restaurante</option>
+                  <option value="int" data-i18n="f_p_int">Estudio de interiorismo</option>
+                  <option value="gal" data-i18n="f_p_gal">Galería o tienda de diseño</option>
+                  <option value="otro" data-i18n="f_p_other">Otro</option>
+                </select>
+              </div>
+              <div class="field"><label for="f-email" data-i18n="f_email">Correo electrónico</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
+            </div>
+            <div class="field"><label for="f-msg" data-i18n="f_msg">Mensaje (opcional)</label><textarea id="f-msg" name="msg"></textarea></div>
+            <p class="note" id="f-error" role="alert"></p>
+            <div><button type="submit" class="btn" data-i18n="f_submit">Solicitar cita</button></div>
+          </form>
+          <div class="confirm" id="confirm" hidden>
+            <p class="motto" style="font-size:28px" data-i18n="f_thanks">Gracias.</p>
+            <p data-i18n="f_done">Este sitio es un prototipo: su solicitud no se ha enviado y no se ha guardado ningún dato.</p>
+            <div><button type="button" class="btn small ghost" id="f-again" data-i18n="f_again">Volver al formulario</button></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-top">
+      <span class="f-slogan">«Cerámica con sabor»</span>
+      <span>#CuatroCes</span>
+    </div>
+    <p data-i18n="ft_note">Prototipo conceptual de un proyecto universitario (UNIMORE, Economía y Gestión de Empresas). Las imágenes son renders 3D generados por ordenador, no fotografías de producto. El logotipo definitivo se sustituirá por el archivo oficial. Marca, productos y datos técnicos pendientes de verificación.</p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  "use strict";
+  var CC = window.CC = window.CC || {};
+
+  /* ---------- Paleta ---------- */
+  var PAL = { cobalto: "#1F4FBF", noche: "#0B1030", terracota: "#C8553D", azafran: "#F4B41A", blanco: "#FFFFFF" };
+  CC.PAL = PAL;
+  function mix(a, b, t) {
+    var pa = parseInt(a.slice(1), 16), pb = parseInt(b.slice(1), 16);
+    var r = Math.round(((pa >> 16) & 255) * (1 - t) + ((pb >> 16) & 255) * t);
+    var g = Math.round(((pa >> 8) & 255) * (1 - t) + ((pb >> 8) & 255) * t);
+    var bl = Math.round((pa & 255) * (1 - t) + (pb & 255) * t);
+    return "#" + ((1 << 24) + (r << 16) + (g << 8) + bl).toString(16).slice(1);
+  }
+  CC.mix = mix;
+
+  /* ---------- Dibujos de cerámica (Canvas 2D) ---------- */
+  function star(ctx, cx, cy, points, R, r, rot) {
+    ctx.beginPath();
+    for (var i = 0; i < points * 2; i++) {
+      var ang = rot + i * Math.PI / points;
+      var rad = i % 2 === 0 ? R : r;
+      var x = cx + Math.cos(ang) * rad, y = cy + Math.sin(ang) * rad;
+      if (i === 0) ctx.moveTo(x, y); else ctx.lineTo(x, y);
+    }
+    ctx.closePath();
+  }
+  function circle(ctx, x, y, r) { ctx.beginPath(); ctx.arc(x, y, r, 0, Math.PI * 2); }
+
+  function drawAzulejo(ctx, S, o) {
+    var ink = o.ink, acc = mix(o.ink, "#FFFFFF", 0.5), ground = o.ground || "#FFFFFF";
+    ctx.save();
+    ctx.fillStyle = ground; ctx.fillRect(0, 0, S, S);
+    ctx.lineCap = "round"; ctx.lineJoin = "round";
+    var c = S / 2, corners = [[0, 0], [S, 0], [0, S], [S, S]], i, k;
+    if (o.motif === "estrella") {
+      for (i = 0; i < 4; i++) {
+        ctx.fillStyle = ink; circle(ctx, corners[i][0], corners[i][1], S * 0.24); ctx.fill();
+        ctx.fillStyle = ground; circle(ctx, corners[i][0], corners[i][1], S * 0.17); ctx.fill();
+        ctx.fillStyle = acc; circle(ctx, corners[i][0], corners[i][1], S * 0.09); ctx.fill();
+      }
+      ctx.fillStyle = ink; star(ctx, c, c, 8, S * 0.31, S * 0.15, -Math.PI / 2); ctx.fill();
+      ctx.fillStyle = ground; star(ctx, c, c, 8, S * 0.21, S * 0.1, -Math.PI / 2 + Math.PI / 8); ctx.fill();
+      ctx.fillStyle = acc; circle(ctx, c, c, S * 0.07); ctx.fill();
+      ctx.fillStyle = ink; circle(ctx, c, c, S * 0.03); ctx.fill();
+      ctx.fillStyle = ink;
+      [[c, 0], [S, c], [c, S], [0, c]].forEach(function (p) {
+        ctx.beginPath(); ctx.moveTo(p[0], p[1] - S * 0.06); ctx.lineTo(p[0] + S * 0.06, p[1]); ctx.lineTo(p[0], p[1] + S * 0.06); ctx.lineTo(p[0] - S * 0.06, p[1]); ctx.closePath(); ctx.fill();
+      });
+    } else if (o.motif === "flor") {
+      ctx.fillStyle = acc;
+      for (k = 0; k < 4; k++) { ctx.save(); ctx.translate(c, c); ctx.rotate(Math.PI / 4 + k * Math.PI / 2); ctx.beginPath(); ctx.ellipse(0, -S * 0.2, S * 0.06, S * 0.13, 0, 0, Math.PI * 2); ctx.fill(); ctx.restore(); }
+      ctx.fillStyle = ink;
+      for (k = 0; k < 4; k++) { ctx.save(); ctx.translate(c, c); ctx.rotate(k * Math.PI / 2); ctx.beginPath(); ctx.ellipse(0, -S * 0.22, S * 0.085, S * 0.17, 0, 0, Math.PI * 2); ctx.fill(); ctx.restore(); }
+      ctx.fillStyle = ground; circle(ctx, c, c, S * 0.08); ctx.fill();
+      ctx.fillStyle = ink; circle(ctx, c, c, S * 0.045); ctx.fill();
+      for (i = 0; i < 4; i++) {
+        ctx.save(); ctx.translate(corners[i][0], corners[i][1]);
+        for (k = 0; k < 4; k++) { ctx.save(); ctx.rotate(k * Math.PI / 2); ctx.fillStyle = ink; ctx.beginPath(); ctx.ellipse(0, -S * 0.12, S * 0.045, S * 0.09, 0, 0, Math.PI * 2); ctx.fill(); ctx.restore(); }
+        ctx.fillStyle = acc; circle(ctx, 0, 0, S * 0.04); ctx.fill();
+        ctx.restore();
+      }
+      ctx.fillStyle = acc;
+      [[c, S * 0.06], [S * 0.94, c], [c, S * 0.94], [S * 0.06, c]].forEach(function (p) { circle(ctx, p[0], p[1], S * 0.022); ctx.fill(); });
+    } else if (o.motif === "ola") {
+      for (i = 0; i < 4; i++) {
+        for (k = 7; k >= 1; k--) {
+          ctx.strokeStyle = k % 2 ? ink : acc; ctx.lineWidth = S * (k % 2 ? 0.026 : 0.016);
+          ctx.beginPath(); ctx.arc(corners[i][0], corners[i][1], S * 0.065 * k, 0, Math.PI * 2); ctx.stroke();
+        }
+      }
+      ctx.fillStyle = ground; circle(ctx, c, c, S * 0.12); ctx.fill();
+      ctx.fillStyle = ink; star(ctx, c, c, 4, S * 0.11, S * 0.04, -Math.PI / 2); ctx.fill();
+      ctx.fillStyle = acc; circle(ctx, c, c, S * 0.025); ctx.fill();
+    } else {
+      ctx.strokeStyle = ink; ctx.lineWidth = S * 0.022;
+      for (k = -4; k <= 4; k++) {
+        var off = k * S / 4;
+        ctx.beginPath(); ctx.moveTo(off, 0); ctx.lineTo(off + S, S); ctx.stroke();
+        ctx.beginPath(); ctx.moveTo(off + S, 0); ctx.lineTo(off, S); ctx.stroke();
+      }
+      ctx.strokeStyle = acc; ctx.lineWidth = S * 0.01;
+      for (k = -4; k <= 4; k++) {
+        var o2 = k * S / 4 + S / 8;
+        ctx.beginPath(); ctx.moveTo(o2, 0); ctx.lineTo(o2 + S, S); ctx.stroke();
+        ctx.beginPath(); ctx.moveTo(o2 + S, 0); ctx.lineTo(o2, S); ctx.stroke();
+      }
+      for (i = 0; i <= 4; i++) for (k = 0; k <= 4; k++) {
+        var x = i * S / 4, y = k * S / 4;
+        if ((i + k) % 2 === 0) { ctx.fillStyle = ink; circle(ctx, x, y, S * 0.04); ctx.fill(); ctx.fillStyle = ground; circle(ctx, x, y, S * 0.018); ctx.fill(); }
+      }
+      ctx.fillStyle = ink; ctx.save(); ctx.translate(c, c); ctx.rotate(Math.PI / 4); ctx.fillRect(-S * 0.09, -S * 0.09, S * 0.18, S * 0.18); ctx.restore();
+      ctx.fillStyle = acc; circle(ctx, c, c, S * 0.04); ctx.fill();
+    }
+    ctx.strokeStyle = ink; ctx.lineWidth = S * 0.012;
+    ctx.strokeRect(S * 0.035, S * 0.035, S * 0.93, S * 0.93);
+    if (o.perforated) {
+      var n = 16, step = S / n;
+      ctx.fillStyle = "rgba(11,16,48,0.55)";
+      for (i = 0; i < n; i++) for (k = 0; k < n; k++) { circle(ctx, step * (i + 0.5), step * (k + 0.5), S * 0.0105); ctx.fill(); }
+    }
+    ctx.restore();
+  }
+  CC.drawAzulejo = drawAzulejo;
+
+  function drawRosette(ctx, S, ink) {
+    var acc = mix(ink, "#FFFFFF", 0.5), c = S / 2, k;
+    ctx.save();
+    ctx.clearRect(0, 0, S, S);
+    ctx.strokeStyle = ink; ctx.lineWidth = S * 0.022; circle(ctx, c, c, S * 0.47); ctx.stroke();
+    ctx.strokeStyle = acc; ctx.lineWidth = S * 0.008; circle(ctx, c, c, S * 0.435); ctx.stroke();
+    ctx.fillStyle = acc;
+    for (k = 0; k < 36; k++) { var a = k * Math.PI * 2 / 36; circle(ctx, c + Math.cos(a) * S * 0.4, c + Math.sin(a) * S * 0.4, S * 0.009); ctx.fill(); }
+    ctx.fillStyle = ink;
+    for (k = 0; k < 12; k++) { ctx.save(); ctx.translate(c, c); ctx.rotate(k * Math.PI / 6); ctx.beginPath(); ctx.ellipse(0, -S * 0.27, S * 0.04, S * 0.09, 0, 0, Math.PI * 2); ctx.fill(); ctx.restore(); }
+    ctx.fillStyle = acc;
+    for (k = 0; k < 12; k++) { ctx.save(); ctx.translate(c, c); ctx.rotate(Math.PI / 12 + k * Math.PI / 6); ctx.beginPath(); ctx.ellipse(0, -S * 0.25, S * 0.02, S * 0.05, 0, 0, Math.PI * 2); ctx.fill(); ctx.restore(); }
+    ctx.fillStyle = ink; star(ctx, c, c, 8, S * 0.15, S * 0.07, -Math.PI / 2); ctx.fill();
+    ctx.fillStyle = "#FFFFFF"; circle(ctx, c, c, S * 0.04); ctx.fill();
+    ctx.fillStyle = ink; circle(ctx, c, c, S * 0.018); ctx.fill();
+    ctx.restore();
+  }
+  CC.drawRosette = drawRosette;
+
+  function drawBand(ctx, W, H, vFrom, vTo, o) {
+    var ground = o.ground, ink = o.ink, acc = o.acc, reps = o.reps || 12;
+    ctx.fillStyle = ground; ctx.fillRect(0, 0, W, H);
+    var y1 = (1 - vTo) * H, y2 = (1 - vFrom) * H, h = y2 - y1, k;
+    ctx.fillStyle = ink; ctx.fillRect(0, y1, W, h * 0.08); ctx.fillRect(0, y2 - h * 0.08, W, h * 0.08);
+    var step = W / reps;
+    for (k = 0; k < reps; k++) {
+      var cx = step * (k + 0.5), cy = y1 + h / 2;
+      ctx.fillStyle = ink; star(ctx, cx, cy, 4, h * 0.32, h * 0.12, -Math.PI / 2); ctx.fill();
+      ctx.fillStyle = acc; circle(ctx, cx, cy, h * 0.07); ctx.fill();
+      ctx.fillStyle = acc; circle(ctx, step * k, cy, h * 0.06); ctx.fill();
+    }
+  }
+  CC.drawBand = drawBand;
+
+  function roundRectPath(ctx, x, y, w, h, r) {
+    ctx.beginPath();
+    ctx.moveTo(x + r, y); ctx.lineTo(x + w - r, y); ctx.quadraticCurveTo(x + w, y, x + w, y + r);
+    ctx.lineTo(x + w, y + h - r); ctx.quadraticCurveTo(x + w, y + h, x + w - r, y + h);
+    ctx.lineTo(x + r, y + h); ctx.quadraticCurveTo(x, y + h, x, y + h - r);
+    ctx.lineTo(x, y + r); ctx.quadraticCurveTo(x, y, x + r, y); ctx.closePath();
+  }
+  function drawTrayBorder(ctx, W, H, rPx, ink) {
+    var acc = mix(ink, "#FFFFFF", 0.5), k;
+    ctx.clearRect(0, 0, W, H);
+    ctx.save();
+    roundRectPath(ctx, 0, 0, W, H, rPx); ctx.clip();
+    ctx.fillStyle = "#FFFFFF"; ctx.fillRect(0, 0, W, H);
+    var b = H * 0.12;
+    ctx.strokeStyle = ink; ctx.lineWidth = H * 0.02; roundRectPath(ctx, b * 0.35, b * 0.35, W - b * 0.7, H - b * 0.7, rPx * 0.75); ctx.stroke();
+    ctx.strokeStyle = acc; ctx.lineWidth = H * 0.008; roundRectPath(ctx, b, b, W - b * 2, H - b * 2, rPx * 0.5); ctx.stroke();
+    ctx.fillStyle = ink;
+    var nx = 18, ny = 10;
+    for (k = 1; k < nx; k++) { circle(ctx, b * 0.35 + (W - b * 0.7) * k / nx, b * 0.68, H * 0.012); ctx.fill(); circle(ctx, b * 0.35 + (W - b * 0.7) * k / nx, H - b * 0.68, H * 0.012); ctx.fill(); }
+    for (k = 1; k < ny; k++) { circle(ctx, b * 0.68, b * 0.35 + (H - b * 0.7) * k / ny, H * 0.012); ctx.fill(); circle(ctx, W - b * 0.68, b * 0.35 + (H - b * 0.7) * k / ny, H * 0.012); ctx.fill(); }
+    ctx.restore();
+  }
+  CC.drawTrayBorder = drawTrayBorder;
+
+  /* Dibujo completo del Cuarteto: un único azulejo grande dividido en cuatro posavasos */
+  function drawCuartetoComposite(ctx, S) {
+    var ink = PAL.cobalto, acc = mix(PAL.cobalto, "#FFFFFF", 0.5), c = S / 2, k;
+    ctx.fillStyle = "#FFFFFF"; ctx.fillRect(0, 0, S, S);
+    ctx.strokeStyle = ink; ctx.lineWidth = S * 0.012;
+    for (k = 7; k >= 1; k--) { ctx.strokeStyle = k % 2 ? ink : acc; ctx.lineWidth = S * (k % 2 ? 0.012 : 0.007); circle(ctx, c, c, S * 0.062 * k); ctx.stroke(); }
+    ctx.fillStyle = ink;
+    for (k = 0; k < 16; k++) { ctx.save(); ctx.translate(c, c); ctx.rotate(k * Math.PI / 8); ctx.beginPath(); ctx.ellipse(0, -S * 0.31, S * 0.025, S * 0.06, 0, 0, Math.PI * 2); ctx.fill(); ctx.restore(); }
+    ctx.fillStyle = "#FFFFFF"; circle(ctx, c, c, S * 0.17); ctx.fill();
+    ctx.fillStyle = ink; star(ctx, c, c, 8, S * 0.16, S * 0.075, -Math.PI / 2); ctx.fill();
+    ctx.fillStyle = PAL.terracota; circle(ctx, c, c, S * 0.035); ctx.fill();
+    [[0, 0], [S, 0], [0, S], [S, S]].forEach(function (p) {
+      ctx.fillStyle = ink; circle(ctx, p[0], p[1], S * 0.16); ctx.fill();
+      ctx.fillStyle = "#FFFFFF"; circle(ctx, p[0], p[1], S * 0.11); ctx.fill();
+      ctx.fillStyle = PAL.terracota; circle(ctx, p[0], p[1], S * 0.05); ctx.fill();
+    });
+    ctx.strokeStyle = ink; ctx.lineWidth = S * 0.008; ctx.strokeRect(S * 0.02, S * 0.02, S * 0.96, S * 0.96);
+  }
+
+  CC.heroTiles = [
+    { motif: "flor", ink: PAL.terracota },
+    { motif: "estrella", ink: PAL.noche },
+    { motif: "ola", ink: PAL.azafran },
+    { motif: "celosia", ink: PAL.cobalto }
+  ];
+
+  /* ---------- Textos ES / IT ---------- */
+  var T = {
+    es: {
+      nav_4c: "Las 4C", nav_taller: "Taller", nav_innov: "Innovación", nav_cuarteto: "Cuarteto", nav_cta: "Solicitar cita",
+      hero_eyebrow: "Lujo artesanal mediterráneo",
+      hero_lead: "Piezas hechas y pintadas a mano para la alta restauración, la hotelería de lujo y los interiores más exigentes.",
+      hero_cta1: "Descubra las 4C", hero_cta2: "Solicitar una cita",
+      hero_caption: "Render 3D · cuatro azulejos, cuatro experiencias",
+      man_eyebrow: "Manifiesto", man_title: "Cada pieza, una obra. Cada visita, una invitación.",
+      man_body: "Cuatro Ces nace de una idea sencilla: la cerámica se entiende cuando se usa. Por eso no la exponemos, la servimos. Comida, Carne, Cóctel y Canciones son las cuatro maneras de vivirla, en la mesa y en el espacio.",
+      p1_t: "Artesanía", p1_d: "Hecha y pintada a mano en el taller.",
+      p2_t: "Exclusividad", p2_d: "Ediciones limitadas y numeradas.",
+      p3_t: "A medida", p3_d: "Monograma, color y forma para cada cliente.",
+      p4_t: "Autenticidad", p4_d: "Certificado y pasaporte digital de cada pieza.",
+      p5_t: "Servicio", p5_d: "Atención por cita y reposición garantizada.",
+      sh_eyebrow: "La colección", sh_title: "Las 4C",
+      sh_sub: "Cuatro líneas, una para cada momento. Gire cada pieza con el ratón o con el dedo.",
+      sh_caption: "Render 3D generado por ordenador · concepto, no fotografía de producto",
+      sh_drag: "Arrastre para girar · rueda o pellizco para acercar",
+      mesa_line: "Línea Mesa", ritual_line: "Línea Ritual", brindis_line: "Línea Brindis", acorde_line: "Línea Acorde",
+      mesa_title: "Comida · La mesa como obra",
+      mesa_body: "Platos, cazuelas y cuencos que se diseñan con el chef de cada casa. En nuestro salón privado, un breve menú servido en la línea Mesa muestra cómo una vajilla única transforma la experiencia del huésped.",
+      mesa_items: ["Plato llano", "Cazuela", "Cuenco"],
+      ritual_title: "Carne · El ritual del servicio",
+      ritual_body: "Bandejas y tablas de presentación que convierten cada corte en protagonista. El servicio en mesa se vuelve un momento escénico.",
+      ritual_items: ["Bandeja", "Tabla de presentación"],
+      brindis_title: "Cóctel · Brindar con una pieza única",
+      brindis_body: "Tazas, vasos y jarras en edición numerada. Cada cóctel de nuestra barra se crea para una pieza concreta.",
+      brindis_items: ["Taza", "Vaso", "Jarra"],
+      acorde_title: "Canciones · Cerámica que cuida el sonido",
+      acorde_body: "Azulejos para paredes y suelos, pintados a mano. La versión fonoabsorbente, en desarrollo, une decoración y confort acústico. La pared muestra el azulejo que usted diseñe en el taller.",
+      acorde_items: ["Azulejo de pared", "Azulejo de suelo", "Versión fonoabsorbente (en desarrollo)"],
+      fallback_3d: "La vista 3D no está disponible en este navegador.",
+      tl_eyebrow: "A medida", tl_title: "Taller de azulejos",
+      tl_sub: "Diseñe su azulejo: elija motivo, color y acabado. Así empieza cada proyecto a medida.",
+      tl_motif: "Motivo", m_estrella: "Estrella", m_flor: "Flor", m_ola: "Ola", m_celosia: "Celosía",
+      tl_color: "Color", c_cobalto: "Azul cobalto", c_noche: "Azul noche", c_terracota: "Terracota", c_azafran: "Oro azafrán",
+      tl_finish: "Acabado", f_brillo: "Brillante", f_mate: "Mate",
+      tl_version: "Versión", v_deco: "Decorativa", v_fono: "Fonoabsorbente (en desarrollo)",
+      tl_view3d: "Ver en la pared 3D", tl_ref: "Referencia de ejemplo",
+      in_eyebrow: "Innovación discreta", in_title: "Diseño contemporáneo, alma artesanal",
+      in_sub: "La innovación está al servicio del oficio: mejora los espacios y protege el valor de cada pieza.",
+      au_title: "Escuche la diferencia",
+      au_body: "Los azulejos Acorde, en desarrollo, están pensados para reducir la reverberación de las salas. Escuche la misma melodía en una sala de superficies duras y en una sala revestida con Acorde.",
+      au_hard: "Superficies duras", au_soft: "Azulejos Acorde", au_play: "Escuchar", au_stop: "Detener",
+      au_note: "Simulación ilustrativa generada en el navegador. No es una medición acústica.",
+      au_axis: "Energía del sonido (modelo de la simulación)", au_time: "segundos",
+      pa_eyebrow: "Autenticidad", pa_title: "Pasaporte digital",
+      pa_body: "Cada pieza lleva un certificado con chip NFC o código QR. Al acercar el teléfono se abre su historia: taller, artesano y número de edición.",
+      pa_btn: "Acercar el teléfono", pa_back: "Volver", pa_example: "Ejemplo",
+      pa_k_piece: "Pieza", pa_v_piece: "Plato llano · Línea Mesa", pa_k_ed: "Edición",
+      pa_k_taller: "Taller", pa_v_taller: "Nombre del taller", pa_k_art: "Artesano", pa_v_art: "Nombre del artesano",
+      pa_k_date: "Cocción", pa_v_date: "Fecha de cocción", pa_k_cert: "Certificado", pa_v_cert: "Pieza original",
+      cu_eyebrow: "Obsequio de feria",
+      cu_body: "Cuatro posavasos de cerámica numerados del I al IV. Juntos forman un único dibujo. El primero se entrega en la feria; los demás llegan con cada paso de la relación.",
+      cu_s1: "En la feria", cu_s2: "Tras la cita en el salón privado", cu_s3: "Con la visita al taller o un proyecto a medida", cu_s4: "Con el primer pedido",
+      cu_hint: "Toque cada posavasos para colocarlo en su lugar.",
+      cu_all: "Reunir el cuarteto", cu_reset: "Empezar de nuevo", cu_done: "Cuarteto completo. Gracias por acompañarnos.",
+      cu_aria: "Posavasos",
+      ci_eyebrow: "Por invitación", ci_title: "Salón privado",
+      ci_body: "La experiencia completa de las 4C se vive por cita: un breve menú, un cóctel de autor y música en directo, en un espacio revestido de azulejos Acorde.",
+      f_name: "Nombre y apellidos", f_company: "Empresa", f_profile: "Perfil",
+      f_p_hotel: "Hotel o restaurante", f_p_int: "Estudio de interiorismo", f_p_gal: "Galería o tienda de diseño", f_p_other: "Otro",
+      f_email: "Correo electrónico", f_msg: "Mensaje (opcional)", f_submit: "Solicitar cita",
+      f_err: "Indique su nombre y un correo electrónico válido.",
+      f_thanks: "Gracias.", f_done: "Este sitio es un prototipo: su solicitud no se ha enviado y no se ha guardado ningún dato.",
+      f_again: "Volver al formulario",
+      ft_note: "Prototipo conceptual de un proyecto universitario (UNIMORE, Economía y Gestión de Empresas). Las imágenes son renders 3D generados por ordenador, no fotografías de producto. El logotipo definitivo se sustituirá por el archivo oficial. Marca, productos y datos técnicos pendientes de verificación."
+    },
+    it: {
+      nav_4c: "Le 4C", nav_taller: "Laboratorio", nav_innov: "Innovazione", nav_cuarteto: "Cuarteto", nav_cta: "Appuntamento",
+      hero_eyebrow: "Lusso artigianale mediterraneo",
+      hero_lead: "Pezzi fatti e dipinti a mano per l'alta ristorazione, l'hotellerie di lusso e gli interni più esigenti.",
+      hero_cta1: "Scopra le 4C", hero_cta2: "Richiedere un appuntamento",
+      hero_caption: "Render 3D · quattro azulejos, quattro esperienze",
+      man_eyebrow: "Manifesto", man_title: "Ogni pezzo, un'opera. Ogni visita, un invito.",
+      man_body: "Cuatro Ces nasce da un'idea semplice: la ceramica si capisce quando si usa. Per questo non la esponiamo, la serviamo. Comida, Carne, Cóctel e Canciones sono i quattro modi di viverla, a tavola e nello spazio.",
+      p1_t: "Artigianalità", p1_d: "Fatta e dipinta a mano in laboratorio.",
+      p2_t: "Esclusività", p2_d: "Edizioni limitate e numerate.",
+      p3_t: "Su misura", p3_d: "Monogramma, colore e forma per ogni cliente.",
+      p4_t: "Autenticità", p4_d: "Certificato e passaporto digitale per ogni pezzo.",
+      p5_t: "Servizio", p5_d: "Assistenza su appuntamento e riassortimento garantito.",
+      sh_eyebrow: "La collezione", sh_title: "Le 4C",
+      sh_sub: "Quattro linee, una per ogni momento. Ruoti ogni pezzo con il mouse o con il dito.",
+      sh_caption: "Render 3D generato al computer · concept, non fotografia del prodotto",
+      sh_drag: "Trascini per ruotare · rotella o pizzico per avvicinare",
+      mesa_line: "Linea Mesa", ritual_line: "Linea Ritual", brindis_line: "Linea Brindis", acorde_line: "Linea Acorde",
+      mesa_title: "Comida · La tavola come opera",
+      mesa_body: "Piatti, cazuelas e ciotole disegnati con lo chef di ogni cliente. Nel nostro salotto privato, un breve menu servito nella linea Mesa mostra come un servizio unico trasforma l'esperienza dell'ospite.",
+      mesa_items: ["Piatto piano", "Cazuela (tegame)", "Ciotola"],
+      ritual_title: "Carne · Il rituale del servizio",
+      ritual_body: "Vassoi e taglieri da presentazione che rendono ogni taglio protagonista. Il servizio al tavolo diventa un momento scenico.",
+      ritual_items: ["Vassoio", "Tagliere da presentazione"],
+      brindis_title: "Cóctel · Brindare con un pezzo unico",
+      brindis_body: "Tazze, bicchieri e brocche in edizione numerata. Ogni cocktail del nostro bancone è creato per un pezzo specifico.",
+      brindis_items: ["Tazza", "Bicchiere", "Brocca"],
+      acorde_title: "Canciones · Ceramica che si prende cura del suono",
+      acorde_body: "Azulejos per pareti e pavimenti, dipinti a mano. La versione fonoassorbente, in sviluppo, unisce decorazione e comfort acustico. La parete mostra l'azulejo che lei disegna nel laboratorio.",
+      acorde_items: ["Azulejo da parete", "Azulejo da pavimento", "Versione fonoassorbente (in sviluppo)"],
+      fallback_3d: "La vista 3D non è disponibile in questo browser.",
+      tl_eyebrow: "Su misura", tl_title: "Laboratorio di azulejos",
+      tl_sub: "Disegni il suo azulejo: scelga motivo, colore e finitura. Così inizia ogni progetto su misura.",
+      tl_motif: "Motivo", m_estrella: "Stella", m_flor: "Fiore", m_ola: "Onda", m_celosia: "Gelosia",
+      tl_color: "Colore", c_cobalto: "Blu cobalto", c_noche: "Blu notte", c_terracota: "Terracotta", c_azafran: "Oro azafrán",
+      tl_finish: "Finitura", f_brillo: "Lucida", f_mate: "Opaca",
+      tl_version: "Versione", v_deco: "Decorativa", v_fono: "Fonoassorbente (in sviluppo)",
+      tl_view3d: "Vedere sulla parete 3D", tl_ref: "Riferimento di esempio",
+      in_eyebrow: "Innovazione discreta", in_title: "Design contemporaneo, anima artigianale",
+      in_sub: "L'innovazione è al servizio del mestiere: migliora gli spazi e protegge il valore di ogni pezzo.",
+      au_title: "Ascolti la differenza",
+      au_body: "Gli azulejos Acorde, in sviluppo, sono pensati per ridurre il riverbero delle sale. Ascolti la stessa melodia in una sala con superfici dure e in una sala rivestita con Acorde.",
+      au_hard: "Superfici dure", au_soft: "Azulejos Acorde", au_play: "Ascoltare", au_stop: "Fermare",
+      au_note: "Simulazione illustrativa generata nel browser. Non è una misurazione acustica.",
+      au_axis: "Energia del suono (modello della simulazione)", au_time: "secondi",
+      pa_eyebrow: "Autenticità", pa_title: "Passaporto digitale",
+      pa_body: "Ogni pezzo ha un certificato con chip NFC o codice QR. Avvicinando il telefono si apre la sua storia: laboratorio, artigiano e numero di edizione.",
+      pa_btn: "Avvicinare il telefono", pa_back: "Indietro", pa_example: "Esempio",
+      pa_k_piece: "Pezzo", pa_v_piece: "Piatto piano · Linea Mesa", pa_k_ed: "Edizione",
+      pa_k_taller: "Laboratorio", pa_v_taller: "Nome del laboratorio", pa_k_art: "Artigiano", pa_v_art: "Nome dell'artigiano",
+      pa_k_date: "Cottura", pa_v_date: "Data di cottura", pa_k_cert: "Certificato", pa_v_cert: "Pezzo originale",
+      cu_eyebrow: "Omaggio della fiera",
+      cu_body: "Quattro sottobicchieri in ceramica numerati da I a IV. Insieme formano un unico disegno. Il primo si riceve in fiera; gli altri arrivano a ogni passo della relazione.",
+      cu_s1: "In fiera", cu_s2: "Dopo l'appuntamento nel salotto privato", cu_s3: "Con la visita al laboratorio o un progetto su misura", cu_s4: "Con il primo ordine",
+      cu_hint: "Tocchi ogni sottobicchiere per metterlo al suo posto.",
+      cu_all: "Riunire il quartetto", cu_reset: "Ricominciare", cu_done: "Cuarteto completo. Grazie di averci accompagnato.",
+      cu_aria: "Sottobicchiere",
+      ci_eyebrow: "Su invito", ci_title: "Salotto privato",
+      ci_body: "L'esperienza completa delle 4C si vive su appuntamento: un breve menu, un cocktail d'autore e musica dal vivo, in uno spazio rivestito di azulejos Acorde.",
+      f_name: "Nome e cognome", f_company: "Azienda", f_profile: "Profilo",
+      f_p_hotel: "Hotel o ristorante", f_p_int: "Studio di interior design", f_p_gal: "Galleria o negozio di design", f_p_other: "Altro",
+      f_email: "Email", f_msg: "Messaggio (facoltativo)", f_submit: "Richiedere un appuntamento",
+      f_err: "Indichi il suo nome e un indirizzo email valido.",
+      f_thanks: "Grazie.", f_done: "Questo sito è un prototipo: la sua richiesta non è stata inviata e non è stato salvato alcun dato.",
+      f_again: "Tornare al modulo",
+      ft_note: "Prototipo concettuale di un progetto universitario (UNIMORE, Economia e Gestione delle Imprese). Le immagini sono render 3D generati al computer, non fotografie di prodotto. Il logo definitivo sarà sostituito dal file ufficiale. Marchio, prodotti e dati tecnici da verificare."
+    }
+  };
+  CC.T = T;
+  CC.lang = "es";
+  try { var saved = localStorage.getItem("cc-lang"); if (saved === "it" || saved === "es") CC.lang = saved; } catch (e) {}
+  CC.t = function (k) { return T[CC.lang][k]; };
+
+  var currentLine = "mesa";
+  CC.currentLine = currentLine;
+
+  function renderLine() {
+    var t = T[CC.lang];
+    document.getElementById("line-title").textContent = t[currentLine + "_title"];
+    document.getElementById("line-body").textContent = t[currentLine + "_body"];
+    var ul = document.getElementById("line-items");
+    ul.textContent = "";
+    t[currentLine + "_items"].forEach(function (s) { var li = document.createElement("li"); li.textContent = s; ul.appendChild(li); });
+  }
+
+  function applyLang(lang) {
+    CC.lang = lang;
+    try { localStorage.setItem("cc-lang", lang); } catch (e) {}
+    document.documentElement.lang = lang;
+    var t = T[lang];
+    document.querySelectorAll("[data-i18n]").forEach(function (el) {
+      var v = t[el.getAttribute("data-i18n")];
+      if (typeof v === "string") el.textContent = v;
+    });
+    document.getElementById("lang-es").setAttribute("aria-pressed", String(lang === "es"));
+    document.getElementById("lang-it").setAttribute("aria-pressed", String(lang === "it"));
+    document.getElementById("play").textContent = playing ? t.au_stop : t.au_play;
+    renderLine();
+    drawDecay();
+    updateRef();
+    if (doneVisible) document.getElementById("done-msg").textContent = t.cu_done;
+    document.querySelectorAll(".coaster").forEach(function (b) { b.setAttribute("aria-label", t.cu_aria + " " + b.dataset.roman); });
+  }
+
+  /* ---------- Pestañas 4C ---------- */
+  var tabs = document.querySelectorAll(".tab");
+  function selectLine(line, focus) {
+    currentLine = line; CC.currentLine = line;
+    tabs.forEach(function (tb) {
+      var on = tb.dataset.line === line;
+      tb.setAttribute("aria-selected", String(on));
+      tb.tabIndex = on ? 0 : -1;
+      if (on) { document.getElementById("stage").setAttribute("aria-labelledby", tb.id); if (focus) tb.focus(); }
+    });
+    renderLine();
+    if (CC.setLine) CC.setLine(line);
+    if (!CC.ready3d) setStageFallback();
+  }
+  tabs.forEach(function (tb, i) {
+    tb.tabIndex = i === 0 ? 0 : -1;
+    tb.addEventListener("click", function () { selectLine(tb.dataset.line); });
+    tb.addEventListener("keydown", function (e) {
+      var dir = (e.key === "ArrowDown" || e.key === "ArrowRight") ? 1 : (e.key === "ArrowUp" || e.key === "ArrowLeft") ? -1 : 0;
+      if (!dir) return;
+      e.preventDefault();
+      var n = (i + dir + tabs.length) % tabs.length;
+      selectLine(tabs[n].dataset.line, true);
+    });
+  });
+  CC.selectLine = selectLine;
+
+  /* ---------- Taller de azulejos ---------- */
+  var tile = { motif: "estrella", color: "cobalto", finish: "brillo", version: "deco" };
+  CC.tile = tile;
+  var prev = document.getElementById("tile-preview"), pctx = prev.getContext("2d");
+  var unit = document.createElement("canvas"); unit.width = unit.height = 300;
+  function drawPreview() {
+    var S = prev.width, n = 3, g = 6, size = (S - g * (n + 1)) / n;
+    drawAzulejo(unit.getContext("2d"), 300, { motif: tile.motif, ink: PAL[tile.color], perforated: tile.version === "fono" });
+    pctx.fillStyle = "#E7E6E2"; pctx.fillRect(0, 0, S, S);
+    for (var i = 0; i < n; i++) for (var k = 0; k < n; k++) {
+      pctx.drawImage(unit, g + i * (size + g), g + k * (size + g), size, size);
+    }
+    if (tile.finish === "brillo") {
+      var gr = pctx.createLinearGradient(0, 0, S, S);
+      gr.addColorStop(0, "rgba(255,255,255,0.28)"); gr.addColorStop(0.35, "rgba(255,255,255,0.0)");
+      gr.addColorStop(0.55, "rgba(255,255,255,0.0)"); gr.addColorStop(0.62, "rgba(255,255,255,0.18)"); gr.addColorStop(0.7, "rgba(255,255,255,0.0)");
+      pctx.fillStyle = gr; pctx.fillRect(0, 0, S, S);
+    } else {
+      pctx.fillStyle = "rgba(231,230,226,0.08)"; pctx.fillRect(0, 0, S, S);
+    }
+    updateRef();
+    if (CC.setTile) CC.setTile(tile);
+  }
+  function updateRef() {
+    var code = "ACR-" + tile.motif.slice(0, 3).toUpperCase() + "-" + tile.color.slice(0, 3).toUpperCase() + "-" + (tile.finish === "brillo" ? "B" : "M") + (tile.version === "fono" ? "-F" : "");
+    document.getElementById("tile-ref").textContent = code;
+  }
+  document.querySelectorAll(".opts").forEach(function (group) {
+    var key = group.dataset.group;
+    group.querySelectorAll(".opt").forEach(function (b) {
+      b.addEventListener("click", function () {
+        group.querySelectorAll(".opt").forEach(function (x) { x.setAttribute("aria-pressed", String(x === b)); });
+        tile[key] = b.dataset.val;
+        drawPreview();
+      });
+    });
+  });
+  document.getElementById("view3d").addEventListener("click", function () {
+    selectLine("acorde");
+    document.getElementById("coleccion").scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
+  });
+
+  /* ---------- Sonido: simulación ilustrativa ---------- */
+  var actx = null, nodes = null, playing = false, loopTimer = null, room = "hard", noteBufs = null;
+  var ROOMS = { hard: { secs: 3.0, pow: 2.2, dry: 0.5, wet: 0.95 }, soft: { secs: 0.7, pow: 3.5, dry: 0.8, wet: 0.3 } };
+  function makeIR(ctx, secs, pow) {
+    var len = Math.floor(ctx.sampleRate * secs), buf = ctx.createBuffer(2, len, ctx.sampleRate);
+    for (var ch = 0; ch < 2; ch++) { var d = buf.getChannelData(ch); for (var i = 0; i < len; i++) d[i] = (Math.random() * 2 - 1) * Math.pow(1 - i / len, pow); }
+    return buf;
+  }
+  function pluck(ctx, freq) {
+    var sr = ctx.sampleRate, N = Math.round(sr / freq), len = Math.floor(sr * 2.4);
+    var buf = ctx.createBuffer(1, len, sr), d = buf.getChannelData(0), ring = new Float32Array(N), idx = 0;
+    for (var i = 0; i < N; i++) ring[i] = Math.random() * 2 - 1;
+    for (var j = 0; j < len; j++) { var nx = (idx + 1) % N, v = ring[idx]; ring[idx] = 0.996 * 0.5 * (ring[idx] + ring[nx]); d[j] = v * 0.3; idx = nx; }
+    return buf;
+  }
+  function setupAudio() {
+    var AC = window.AudioContext || window.webkitAudioContext;
+    if (!AC) return false;
+    actx = new AC();
+    var master = actx.createGain(); master.gain.value = 0.9; master.connect(actx.destination);
+    var dry = actx.createGain(), bus = actx.createGain();
+    var cH = actx.createConvolver(), cS = actx.createConvolver();
+    cH.buffer = makeIR(actx, ROOMS.hard.secs, ROOMS.hard.pow); cS.buffer = makeIR(actx, ROOMS.soft.secs, ROOMS.soft.pow);
+    var gH = actx.createGain(), gS = actx.createGain();
+    dry.connect(master); bus.connect(cH); bus.connect(cS); cH.connect(gH); cS.connect(gS); gH.connect(master); gS.connect(master);
+    nodes = { dry: dry, bus: bus, gH: gH, gS: gS };
+    noteBufs = [220.0, 261.63, 329.63, 392.0, 440.0, 392.0, 329.63, 261.63].map(function (f) { return pluck(actx, f); });
+    applyRoom(true);
+    return true;
+  }
+  function applyRoom(instant) {
+    if (!nodes) return;
+    var r = ROOMS[room], t = actx.currentTime, tc = instant ? 0.001 : 0.15;
+    nodes.dry.gain.setTargetAtTime(r.dry, t, tc);
+    nodes.gH.gain.setTargetAtTime(room === "hard" ? r.wet : 0, t, tc);
+    nodes.gS.gain.setTargetAtTime(room === "soft" ? r.wet : 0, t, tc);
+  }
+  function playPhrase() {
+    var t0 = actx.currentTime + 0.05;
+    noteBufs.forEach(function (b, i) {
+      var s = actx.createBufferSource(); s.buffer = b;
+      s.connect(nodes.dry); s.connect(nodes.bus); s.start(t0 + i * 0.34);
+    });
+  }
+  var playBtn = document.getElementById("play");
+  playBtn.addEventListener("click", function () {
+    if (!actx && !setupAudio()) { playBtn.disabled = true; return; }
+    if (actx.state === "suspended") actx.resume();
+    if (playing) { playing = false; clearInterval(loopTimer); playBtn.textContent = CC.t("au_play"); return; }
+    playing = true; playBtn.textContent = CC.t("au_stop");
+    playPhrase(); loopTimer = setInterval(playPhrase, 4200);
+  });
+  function setRoom(r) {
+    room = r;
+    document.getElementById("room-hard").setAttribute("aria-pressed", String(r === "hard"));
+    document.getElementById("room-soft").setAttribute("aria-pressed", String(r === "soft"));
+    applyRoom(false); drawDecay();
+  }
+  document.getElementById("room-hard").addEventListener("click", function () { setRoom("hard"); });
+  document.getElementById("room-soft").addEventListener("click", function () { setRoom("soft"); });
+
+  var decay = document.getElementById("decay"), dctx = decay.getContext("2d");
+  function drawDecay() {
+    var W = decay.width, H = decay.height, L = 64, R = 24, Tp = 28, B = 52, maxS = 3.2;
+    dctx.clearRect(0, 0, W, H);
+    dctx.font = "500 20px Inter, system-ui, sans-serif";
+    dctx.strokeStyle = "rgba(255,255,255,0.12)"; dctx.lineWidth = 1;
+    dctx.fillStyle = "#BCC3E6"; dctx.textAlign = "center";
+    for (var s = 0; s <= 3; s++) {
+      var x = L + (W - L - R) * s / maxS;
+      dctx.beginPath(); dctx.moveTo(x, Tp); dctx.lineTo(x, H - B); dctx.stroke();
+      dctx.fillText(s + " s", x, H - B + 28);
+    }
+    dctx.beginPath(); dctx.moveTo(L, H - B); dctx.lineTo(W - R, H - B); dctx.stroke();
+    dctx.save(); dctx.translate(22, (Tp + H - B) / 2); dctx.rotate(-Math.PI / 2); dctx.font = "500 16px Inter, system-ui, sans-serif"; dctx.fillText(CC.t("au_axis").split(" (")[0], 0, 0); dctx.restore();
+    ["hard", "soft"].forEach(function (key) {
+      var r = ROOMS[key], on = key === room;
+      dctx.beginPath();
+      for (var i = 0; i <= 200; i++) {
+        var tt = maxS * i / 200, e = tt >= r.secs ? 0 : Math.pow(1 - tt / r.secs, r.pow);
+        var px = L + (W - L - R) * tt / maxS, py = Tp + (H - B - Tp) * (1 - e);
+        if (i === 0) dctx.moveTo(px, py); else dctx.lineTo(px, py);
+      }
+      dctx.strokeStyle = on ? (key === "hard" ? "#C8553D" : "#F4B41A") : "rgba(255,255,255,0.22)";
+      dctx.lineWidth = on ? 4 : 2; dctx.stroke();
+    });
+    dctx.textAlign = "left"; dctx.font = "500 20px Inter, system-ui, sans-serif";
+    dctx.fillStyle = room === "hard" ? "#C8553D" : "rgba(255,255,255,0.45)"; dctx.fillText(CC.t("au_hard"), L + 340, Tp + 56);
+    dctx.fillStyle = room === "soft" ? "#F4B41A" : "rgba(255,255,255,0.45)"; dctx.fillText(CC.t("au_soft"), L + 120, Tp + 150);
+  }
+
+  /* ---------- Pasaporte ---------- */
+  var pp = document.getElementById("passport");
+  (function () {
+    var c = document.getElementById("pp-plate"), x = c.getContext("2d"), S = c.width;
+    var g = x.createRadialGradient(S / 2, S / 2 + 10, S * 0.3, S / 2, S / 2 + 10, S * 0.5);
+    g.addColorStop(0, "rgba(0,0,0,0.35)"); g.addColorStop(1, "rgba(0,0,0,0)");
+    x.fillStyle = g; x.fillRect(0, 0, S, S);
+    x.fillStyle = "#FFFFFF"; circle(x, S / 2, S / 2, S * 0.46); x.fill();
+    x.strokeStyle = "rgba(11,16,48,0.12)"; x.lineWidth = 2; circle(x, S / 2, S / 2, S * 0.36); x.stroke();
+    var r = document.createElement("canvas"); r.width = r.height = 512; drawRosette(r.getContext("2d"), 512, PAL.cobalto);
+    x.drawImage(r, S * 0.17, S * 0.17, S * 0.66, S * 0.66);
+  })();
+  document.getElementById("pp-tap").addEventListener("click", function () {
+    pp.classList.add("reading");
+    setTimeout(function () { pp.classList.remove("reading"); pp.classList.add("flipped"); document.getElementById("pp-back").focus({ preventScroll: true }); }, 1100);
+  });
+  document.getElementById("pp-back").addEventListener("click", function () { pp.classList.remove("flipped"); document.getElementById("pp-tap").focus({ preventScroll: true }); });
+
+  /* ---------- Cuarteto ---------- */
+  var comp = document.createElement("canvas"); comp.width = comp.height = 800;
+  drawCuartetoComposite(comp.getContext("2d"), 800);
+  var ROM = ["I", "II", "III", "IV"], ROT = [-8, 6, -4, 9], ORDER = [2, 4, 1, 3];
+  var tray = document.getElementById("tray"), grid = document.getElementById("grid2"), doneVisible = false;
+  var quads = ROM.map(function (_, i) {
+    var q = document.createElement("canvas"); q.width = q.height = 400;
+    q.getContext("2d").drawImage(comp, (i % 2) * 400, Math.floor(i / 2) * 400, 400, 400, 0, 0, 400, 400);
+    return q.toDataURL("image/png");
+  });
+  function buildCoasters() {
+    tray.textContent = "";
+    grid.querySelectorAll(".coaster").forEach(function (c) { c.remove(); });
+    ORDER.forEach(function (n) {
+      var b = document.createElement("button");
+      b.type = "button"; b.className = "coaster"; b.dataset.n = String(n); b.dataset.roman = ROM[n - 1];
+      b.style.setProperty("--rot", ROT[n - 1] + "deg");
+      b.setAttribute("aria-label", CC.t("cu_aria") + " " + ROM[n - 1]);
+      var img = document.createElement("img"); img.src = quads[n - 1]; img.alt = "";
+      var badge = document.createElement("span"); badge.className = "badge"; badge.textContent = ROM[n - 1];
+      b.appendChild(img); b.appendChild(badge);
+      b.addEventListener("click", function () { place(b, true); });
+      tray.appendChild(b);
+    });
+    doneVisible = false;
+    document.getElementById("done-msg").textContent = "";
+    grid.classList.remove("complete");
+    document.querySelectorAll("#steps li").forEach(function (li) { li.classList.remove("on"); });
+  }
+  function place(b, animate) {
+    if (b.parentElement !== tray) return;
+    var slot = grid.querySelector('[data-slot="' + b.dataset.n + '"]');
+    var first = b.getBoundingClientRect();
+    slot.appendChild(b);
+    b.disabled = true;
+    var last = b.getBoundingClientRect();
+    if (animate && !matchMedia("(prefers-reduced-motion: reduce)").matches && b.animate) {
+      var dx = first.left - last.left, dy = first.top - last.top, sc = first.width / last.width;
+      b.style.transformOrigin = "0 0";
+      b.animate([
+        { transform: "translate(" + dx + "px," + dy + "px) scale(" + sc + ") rotate(" + ROT[b.dataset.n - 1] + "deg)" },
+        { transform: "none" }
+      ], { duration: 650, easing: "cubic-bezier(.2,.7,.2,1)" });
+    }
+    var li = document.querySelector('#steps li[data-n="' + b.dataset.n + '"]');
+    if (li) li.classList.add("on");
+    if (!tray.querySelector(".coaster")) {
+      setTimeout(function () {
+        grid.classList.add("complete"); doneVisible = true;
+        document.getElementById("done-msg").textContent = CC.t("cu_done");
+      }, animate ? 650 : 0);
+    }
+  }
+  document.getElementById("cu-all").addEventListener("click", function () {
+    var list = Array.prototype.slice.call(tray.querySelectorAll(".coaster"));
+    list.sort(function (a, b) { return a.dataset.n - b.dataset.n; });
+    list.forEach(function (b, i) { setTimeout(function () { place(b, true); }, i * 180); });
+  });
+  document.getElementById("cu-reset").addEventListener("click", buildCoasters);
+  buildCoasters();
+
+  /* ---------- Formulario ---------- */
+  var form = document.getElementById("cita-form"), confirmBox = document.getElementById("confirm");
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    var name = document.getElementById("f-name"), email = document.getElementById("f-email");
+    if (!name.value.trim() || !email.checkValidity() || !email.value.trim()) {
+      document.getElementById("f-error").textContent = CC.t("f_err");
+      (name.value.trim() ? email : name).focus();
+      return;
+    }
+    document.getElementById("f-error").textContent = "";
+    form.reset();
+    form.hidden = true; confirmBox.hidden = false;
+  });
+  document.getElementById("f-again").addEventListener("click", function () { confirmBox.hidden = true; form.hidden = false; document.getElementById("f-name").focus(); });
+
+  /* ---------- Imágenes de respaldo (si WebGL no está disponible) ---------- */
+  function tileDataURL(o, size) { var c = document.createElement("canvas"); c.width = c.height = size; drawAzulejo(c.getContext("2d"), size, o); return c; }
+  (function () {
+    var c = document.createElement("canvas"); c.width = c.height = 600; var x = c.getContext("2d");
+    x.fillStyle = "#0B1030"; x.fillRect(0, 0, 600, 600);
+    CC.heroTiles.forEach(function (o, i) { x.drawImage(tileDataURL(o, 290), (i % 2) * 300 + 5, Math.floor(i / 2) * 300 + 5); });
+    document.getElementById("hero-fallback-img").src = c.toDataURL("image/png");
+  })();
+  function setStageFallback() {
+    var o = currentLine === "acorde" ? { motif: tile.motif, ink: PAL[tile.color] } : currentLine === "brindis" ? { motif: "ola", ink: PAL.azafran } : currentLine === "ritual" ? { motif: "estrella", ink: PAL.terracota } : { motif: "flor", ink: PAL.cobalto };
+    document.getElementById("stage-fallback-img").src = tileDataURL(o, 500).toDataURL("image/png");
+  }
+  setStageFallback();
+  CC.hideFallbacks = function () {
+    document.getElementById("hero-fallback").hidden = true;
+    document.getElementById("stage-fallback").hidden = true;
+  };
+
+  /* ---------- Idioma ---------- */
+  document.querySelectorAll(".lang button").forEach(function (b) { b.addEventListener("click", function () { applyLang(b.dataset.lang); }); });
+  drawPreview();
+  applyLang(CC.lang);
+})();
+</script>
+
+<script type="importmap">
+{ "imports": {
+  "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+  "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+} }
+</script>
+<script type="module">
+import * as THREE from "three";
+import { OrbitControls } from "three/addons/controls/OrbitControls.js";
+import { RoomEnvironment } from "three/addons/environments/RoomEnvironment.js";
+
+const CC = window.CC;
+const PAL = CC.PAL;
+const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+function makeRenderer(canvas) {
+  const r = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true });
+  r.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+  r.toneMapping = THREE.ACESFilmicToneMapping;
+  r.toneMappingExposure = 1.0;
+  r.shadowMap.enabled = true;
+  r.shadowMap.type = THREE.PCFSoftShadowMap;
+  return r;
+}
+function environment(renderer) {
+  const pm = new THREE.PMREMGenerator(renderer);
+  const tex = pm.fromScene(new RoomEnvironment(), 0.04).texture;
+  pm.dispose();
+  return tex;
+}
+function canvasTex(draw, w, h) {
+  const c = document.createElement("canvas"); c.width = w; c.height = h;
+  draw(c.getContext("2d"), w, h);
+  const t = new THREE.CanvasTexture(c);
+  t.colorSpace = THREE.SRGBColorSpace; t.anisotropy = 8;
+  return t;
+}
+function glaze(opts = {}) {
+  return new THREE.MeshPhysicalMaterial(Object.assign({ color: 0xffffff, roughness: 0.2, metalness: 0, clearcoat: 1, clearcoatRoughness: 0.06, side: THREE.DoubleSide }, opts));
+}
+function terracotta() { return new THREE.MeshStandardMaterial({ color: 0xc8553d, roughness: 0.88, metalness: 0, side: THREE.DoubleSide }); }
+function lathe(pts, seg = 96) { return new THREE.LatheGeometry(pts.map(([x, y]) => new THREE.Vector2(x, y)), seg); }
+function shadowMesh(mesh) { mesh.castShadow = true; mesh.receiveShadow = true; return mesh; }
+function roundedShape(w, h, r) {
+  const s = new THREE.Shape(), x = -w / 2, y = -h / 2;
+  s.moveTo(x + r, y); s.lineTo(x + w - r, y); s.quadraticCurveTo(x + w, y, x + w, y + r);
+  s.lineTo(x + w, y + h - r); s.quadraticCurveTo(x + w, y + h, x + w - r, y + h);
+  s.lineTo(x + r, y + h); s.quadraticCurveTo(x, y + h, x, y + h - r);
+  s.lineTo(x, y + r); s.quadraticCurveTo(x, y, x + r, y);
+  return s;
+}
+function addLights(scene, strong) {
+  const key = new THREE.DirectionalLight(0xfff4e6, strong ? 2.2 : 1.6);
+  key.position.set(3, 6, 4); key.castShadow = true;
+  key.shadow.mapSize.set(1024, 1024); key.shadow.radius = 6; key.shadow.bias = -0.0005;
+  const cam = key.shadow.camera; cam.left = -4; cam.right = 4; cam.top = 4; cam.bottom = -4; cam.near = 0.5; cam.far = 20;
+  scene.add(key);
+  const rim = new THREE.PointLight(0xf4b41a, 0.6, 12); rim.position.set(-4, 2.5, -3); scene.add(rim);
+  scene.add(new THREE.HemisphereLight(0xcfd8ff, 0x0b1030, 0.35));
+}
+function observe(el, cb) {
+  const io = new IntersectionObserver((ents) => ents.forEach((e) => cb(e.isIntersecting)), { threshold: 0.01 });
+  io.observe(el);
+}
+function fit(renderer, camera, el) {
+  const ro = new ResizeObserver(() => {
+    const w = el.clientWidth, h = el.clientHeight;
+    if (!w || !h) return;
+    renderer.setSize(w, h, false);
+    camera.aspect = w / h; camera.updateProjectionMatrix();
+  });
+  ro.observe(el);
+}
+
+/* ================= HERO: cuatro azulejos ================= */
+function initHero() {
+  const canvas = document.getElementById("hero-canvas");
+  const stage = document.getElementById("hero-stage");
+  const renderer = makeRenderer(canvas);
+  const scene = new THREE.Scene();
+  scene.environment = environment(renderer);
+  const camera = new THREE.PerspectiveCamera(32, 1, 0.1, 50);
+  camera.position.set(0, 0, 7.2);
+  fit(renderer, camera, stage);
+  addLights(scene, true);
+
+  const group = new THREE.Group(); scene.add(group);
+  const side = glaze({ color: 0xf2f2f2, side: THREE.FrontSide });
+  const tiles = CC.heroTiles.map((o, i) => {
+    const map = canvasTex((ctx, w) => CC.drawAzulejo(ctx, w, o), 1024, 1024);
+    const face = glaze({ map, side: THREE.FrontSide });
+    const mesh = shadowMesh(new THREE.Mesh(new THREE.BoxGeometry(1.5, 1.5, 0.1), [side, side, side, side, face, side]));
+    const tx = (i % 2 === 0 ? -0.78 : 0.78), ty = (i < 2 ? 0.78 : -0.78);
+    mesh.userData = {
+      target: new THREE.Vector3(tx, ty, 0),
+      from: new THREE.Vector3(tx * 2.6 + (i - 1.5) * 0.4, ty * 2.2 - 0.6, -2.5 - i * 0.6),
+      rotFrom: new THREE.Euler(0.9 - i * 0.5, -1.2 + i * 0.7, 0.5 - i * 0.3),
+      delay: i * 0.18, phase: i * 1.7
+    };
+    group.add(mesh);
+    return mesh;
+  });
+
+  let visible = true, t0 = performance.now(), px = 0, py = 0, rx = 0, ry = 0;
+  observe(stage, (v) => { visible = v; });
+  window.addEventListener("pointermove", (e) => { px = e.clientX / window.innerWidth - 0.5; py = e.clientY / window.innerHeight - 0.5; }, { passive: true });
+  const ease = (x) => 1 - Math.pow(1 - x, 3);
+
+  function frame(now) {
+    requestAnimationFrame(frame);
+    if (!visible || document.hidden) return;
+    const t = (now - t0) / 1000;
+    tiles.forEach((m) => {
+      const u = m.userData;
+      const k = reduce ? 1 : ease(Math.min(1, Math.max(0, (t - u.delay) / 2.2)));
+      m.position.lerpVectors(u.from, u.target, k);
+      m.rotation.set(u.rotFrom.x * (1 - k), u.rotFrom.y * (1 - k), u.rotFrom.z * (1 - k));
+      if (!reduce && k === 1) m.position.z = Math.sin(t * 0.9 + u.phase) * 0.06;
+    });
+    const tx = reduce ? -0.12 : -0.18 + py * -0.35, ty = reduce ? 0.35 : 0.42 + px * 0.6;
+    rx += (tx - rx) * 0.05; ry += (ty - ry) * 0.05;
+    group.rotation.set(rx, ry, 0);
+    renderer.render(scene, camera);
+  }
+  requestAnimationFrame(frame);
+}
+
+/* ================= SHOWROOM: las cuatro líneas ================= */
+function initShowroom() {
+  const canvas = document.getElementById("stage-canvas");
+  const stage = document.getElementById("stage");
+  const renderer = makeRenderer(canvas);
+  const scene = new THREE.Scene();
+  scene.environment = environment(renderer);
+  scene.fog = new THREE.Fog(0x0b1030, 9, 18);
+  const camera = new THREE.PerspectiveCamera(35, 4 / 3, 0.1, 60);
+  fit(renderer, camera, stage);
+  addLights(scene, false);
+  const controls = new OrbitControls(camera, canvas);
+  controls.enableDamping = true; controls.dampingFactor = 0.08;
+  controls.enablePan = false;
+  controls.autoRotateSpeed = 0.8;
+
+  const floor = new THREE.Mesh(new THREE.CircleGeometry(6, 64), new THREE.ShadowMaterial({ opacity: 0.35 }));
+  floor.rotation.x = -Math.PI / 2; floor.receiveShadow = true; scene.add(floor);
+  const plinthMat = new THREE.MeshStandardMaterial({ color: 0xf3f3f1, roughness: 0.75 });
+  function plinth(w, d, h = 0.5) {
+    const m = shadowMesh(new THREE.Mesh(new THREE.BoxGeometry(w, h, d), plinthMat));
+    m.position.y = -h / 2; return m;
+  }
+  const lines = {};
+
+  /* --- Mesa (Comida) --- */
+  {
+    const g = new THREE.Group();
+    g.add(plinth(3.6, 2.6));
+    const plateGeo = lathe([[0, 0.02], [0.5, 0.02], [0.52, 0], [0.56, 0], [0.58, 0.03], [0.9, 0.1], [1.0, 0.16], [1.03, 0.185], [1.0, 0.2], [0.9, 0.14], [0.62, 0.078], [0.55, 0.062], [0, 0.062]]);
+    const plate = shadowMesh(new THREE.Mesh(plateGeo, glaze()));
+    const decalTex = canvasTex((ctx, w) => CC.drawRosette(ctx, w, PAL.cobalto), 1024, 1024);
+    const decal = new THREE.Mesh(new THREE.CircleGeometry(0.54, 64), glaze({ map: decalTex, transparent: true, side: THREE.FrontSide, polygonOffset: true, polygonOffsetFactor: -2 }));
+    decal.rotation.x = -Math.PI / 2; decal.position.y = 0.0635; plate.add(decal);
+    plate.position.set(0.55, 0, 0.2);
+    g.add(plate);
+
+    const caz = new THREE.Group();
+    caz.add(shadowMesh(new THREE.Mesh(lathe([[0, 0], [0.5, 0], [0.62, 0.05], [0.68, 0.2], [0.71, 0.33], [0.725, 0.35], [0.7, 0.36]]), terracotta())));
+    caz.add(shadowMesh(new THREE.Mesh(lathe([[0.69, 0.355], [0.65, 0.3], [0.61, 0.13], [0.5, 0.065], [0, 0.06]]), glaze({ color: 0x1f4fbf }))));
+    [1, -1].forEach((s) => {
+      const hg = new THREE.TorusGeometry(0.1, 0.032, 12, 24, Math.PI);
+      hg.rotateX(Math.PI / 2); hg.rotateY(s * Math.PI / 2);
+      const h = shadowMesh(new THREE.Mesh(hg, terracotta()));
+      h.position.set(s * 0.7, 0.27, 0); caz.add(h);
+    });
+    caz.scale.setScalar(0.85); caz.position.set(-0.95, 0, -0.62); g.add(caz);
+
+    const bowlTex = canvasTex((ctx, w, h) => CC.drawBand(ctx, w, h, 0.25, 0.42, { ground: "#FFFFFF", ink: PAL.cobalto, acc: CC.mix(PAL.cobalto, "#FFFFFF", 0.5), reps: 10 }), 1024, 512);
+    const bowl = shadowMesh(new THREE.Mesh(lathe([[0, 0], [0.22, 0], [0.25, 0.02], [0.36, 0.13], [0.44, 0.27], [0.45, 0.285], [0.43, 0.29], [0.37, 0.16], [0.25, 0.05], [0, 0.04]]), glaze({ map: bowlTex })));
+    bowl.position.set(-1.1, 0, 0.62); g.add(bowl);
+    lines.mesa = { group: g, cam: [0, 2.4, 4.2], target: [0, 0.15, 0], auto: true, limits: null };
+  }
+
+  /* --- Ritual (Carne) --- */
+  {
+    const g = new THREE.Group();
+    g.add(plinth(3.8, 2.8));
+    const W = 2.0, H = 1.2, R = 0.2;
+    const trayGeo = new THREE.ExtrudeGeometry(roundedShape(W, H, R), { depth: 0.05, bevelEnabled: true, bevelThickness: 0.03, bevelSize: 0.03, bevelSegments: 4, curveSegments: 24 });
+    trayGeo.rotateX(-Math.PI / 2);
+    const tray = shadowMesh(new THREE.Mesh(trayGeo, glaze()));
+    tray.position.y = 0.03;
+    const borderTex = canvasTex((ctx, w, h) => CC.drawTrayBorder(ctx, w, h, h * (R / H), PAL.cobalto), 1600, 960);
+    const top = new THREE.Mesh(new THREE.PlaneGeometry(W, H), glaze({ map: borderTex, transparent: true, side: THREE.FrontSide, polygonOffset: true, polygonOffsetFactor: -2 }));
+    top.rotation.x = -Math.PI / 2; top.position.y = 0.081; tray.add(top);
+    tray.position.set(0.3, 0.03, 0.35); tray.rotation.y = -0.15;
+    g.add(tray);
+
+    const board = roundedShape(2.5, 0.75, 0.3);
+    const hole = new THREE.Path(); hole.absarc(1.0, 0, 0.08, 0, Math.PI * 2, true); board.holes.push(hole);
+    const boardGeo = new THREE.ExtrudeGeometry(board, { depth: 0.06, bevelEnabled: true, bevelThickness: 0.02, bevelSize: 0.02, bevelSegments: 3, curveSegments: 32 });
+    boardGeo.rotateX(-Math.PI / 2);
+    const tabla = shadowMesh(new THREE.Mesh(boardGeo, terracotta()));
+    tabla.position.set(-0.35, 0.02, -0.75); tabla.rotation.y = 0.35;
+    g.add(tabla);
+    lines.ritual = { group: g, cam: [0.4, 2.6, 4.0], target: [0, 0.05, 0], auto: true, limits: null };
+  }
+
+  /* --- Brindis (Cóctel) --- */
+  {
+    const g = new THREE.Group();
+    g.add(plinth(3.4, 2.4));
+    const cupPts = [[0, 0], [0.32, 0], [0.34, 0.03], [0.36, 0.5], [0.38, 0.7], [0.385, 0.71], [0.37, 0.715], [0.35, 0.68], [0.33, 0.06], [0, 0.05]];
+    const cupTex = canvasTex((ctx, w, h) => CC.drawBand(ctx, w, h, 0.32, 0.43, { ground: "#FFFFFF", ink: PAL.azafran, acc: PAL.cobalto, reps: 9 }), 1024, 512);
+    const cup = new THREE.Group();
+    cup.add(shadowMesh(new THREE.Mesh(lathe(cupPts), glaze({ map: cupTex }))));
+    const hg = new THREE.TorusGeometry(0.17, 0.035, 14, 32, Math.PI); hg.rotateZ(-Math.PI / 2);
+    const handle = shadowMesh(new THREE.Mesh(hg, glaze()));
+    handle.position.set(0.37, 0.38, 0); cup.add(handle);
+    cup.position.set(-0.9, 0, 0.35); cup.rotation.y = 0.6; g.add(cup);
+
+    const glassPts = [[0, 0], [0.26, 0], [0.27, 0.02], [0.33, 0.8], [0.335, 0.81], [0.32, 0.812], [0.315, 0.79], [0.255, 0.05], [0, 0.04]];
+    const glassTex = canvasTex((ctx, w, h) => CC.drawBand(ctx, w, h, 0.25, 0.4, { ground: PAL.cobalto, ink: "#FFFFFF", acc: PAL.azafran, reps: 8 }), 1024, 512);
+    const glass = shadowMesh(new THREE.Mesh(lathe(glassPts), glaze({ map: glassTex })));
+    glass.position.set(0.1, 0, 0.6); g.add(glass);
+
+    const jarPts = [[0, 0], [0.38, 0], [0.4, 0.03], [0.46, 0.35], [0.43, 0.75], [0.34, 0.95], [0.36, 1.1], [0.37, 1.11], [0.35, 1.115], [0.33, 1.08], [0.31, 0.95], [0.4, 0.75], [0.43, 0.35], [0.37, 0.06], [0, 0.05]];
+    const jarTex = canvasTex((ctx, w, h) => CC.drawBand(ctx, w, h, 0.15, 0.3, { ground: "#FFFFFF", ink: PAL.cobalto, acc: PAL.azafran, reps: 10 }), 1024, 512);
+    const jar = new THREE.Group();
+    jar.add(shadowMesh(new THREE.Mesh(lathe(jarPts), glaze({ map: jarTex }))));
+    const jg = new THREE.TorusGeometry(0.27, 0.04, 14, 32, Math.PI); jg.rotateZ(-Math.PI / 2);
+    const jh = shadowMesh(new THREE.Mesh(jg, glaze())); jh.position.set(0.42, 0.68, 0); jar.add(jh);
+    jar.position.set(0.85, 0, -0.35); jar.rotation.y = 2.4; g.add(jar);
+    lines.brindis = { group: g, cam: [0, 2.0, 4.4], target: [0, 0.45, 0], auto: true, limits: null };
+  }
+
+  /* --- Acorde (Canciones) --- */
+  const acordeMats = [];
+  let floorMat;
+  {
+    const g = new THREE.Group();
+    const size = 0.5, gap = 0.012, depth = 0.04;
+    const tileGeo = new THREE.BoxGeometry(size - gap, size - gap, depth);
+    const edge = glaze({ color: 0xeeeeee, side: THREE.FrontSide });
+    for (let c = 0; c < 6; c++) for (let r = 0; r < 5; r++) {
+      const mat = glaze({ side: THREE.FrontSide }); acordeMats.push(mat);
+      const m = new THREE.Mesh(tileGeo, [edge, edge, edge, edge, mat, edge]);
+      m.position.set(-1.5 + size / 2 + c * size, size / 2 + r * size, -1.25); m.receiveShadow = true;
+      g.add(m);
+    }
+    for (let c = 0; c < 5; c++) for (let r = 0; r < 5; r++) {
+      const mat = glaze({ side: THREE.FrontSide }); acordeMats.push(mat);
+      const m = new THREE.Mesh(tileGeo, [edge, edge, edge, edge, mat, edge]);
+      m.rotation.y = Math.PI / 2;
+      m.position.set(-1.5, size / 2 + r * size, -1.25 + size / 2 + c * size); m.receiveShadow = true;
+      g.add(m);
+    }
+    const floorTex = canvasTex((ctx, w) => CC.drawAzulejo(ctx, w, { motif: "celosia", ink: PAL.noche }), 512, 512);
+    floorMat = glaze({ map: floorTex, roughness: 0.35, side: THREE.FrontSide });
+    for (let c = 0; c < 6; c++) for (let r = 0; r < 5; r++) {
+      const m = new THREE.Mesh(tileGeo, [edge, edge, edge, edge, floorMat, edge]);
+      m.rotation.x = -Math.PI / 2;
+      m.position.set(-1.5 + size / 2 + c * size, depth / 2, -1.25 + size / 2 + r * size); m.receiveShadow = true;
+      g.add(m);
+    }
+    const grout = new THREE.MeshStandardMaterial({ color: 0xdedcd6, roughness: 0.9 });
+    const back = new THREE.Mesh(new THREE.PlaneGeometry(3, 2.5), grout); back.position.set(0, 1.25, -1.272); g.add(back);
+    const left = new THREE.Mesh(new THREE.PlaneGeometry(2.5, 2.5), grout); left.rotation.y = Math.PI / 2; left.position.set(-1.522, 1.25, 0); g.add(left);
+    const base = new THREE.Mesh(new THREE.PlaneGeometry(3, 2.5), grout); base.rotation.x = -Math.PI / 2; base.position.set(0, 0.001, 0); g.add(base);
+    const ped = shadowMesh(new THREE.Mesh(new THREE.CylinderGeometry(0.22, 0.22, 0.8, 48), plinthMat));
+    ped.position.set(0.7, 0.4, 0.2); g.add(ped);
+    const vasePts = [[0, 0], [0.16, 0], [0.17, 0.02], [0.22, 0.25], [0.16, 0.48], [0.12, 0.6], [0.13, 0.62], [0.115, 0.62], [0.1, 0.6], [0, 0.6]];
+    const vaseTex = canvasTex((ctx, w, h) => CC.drawBand(ctx, w, h, 0.25, 0.5, { ground: PAL.cobalto, ink: "#FFFFFF", acc: PAL.azafran, reps: 7 }), 1024, 512);
+    const vase = shadowMesh(new THREE.Mesh(lathe(vasePts), glaze({ map: vaseTex })));
+    vase.position.set(0.7, 0.8, 0.2); g.add(vase);
+    lines.acorde = { group: g, cam: [2.4, 1.9, 3.7], target: [-0.4, 0.9, -0.4], auto: false, limits: { minAz: -0.15, maxAz: 1.35, maxPolar: 1.45 } };
+  }
+  function setTile(t) {
+    const tex = canvasTex((ctx, w) => CC.drawAzulejo(ctx, w, { motif: t.motif, ink: PAL[t.color], perforated: t.version === "fono" }), 1024, 1024);
+    const rough = t.finish === "brillo" ? 0.2 : 0.62, coat = t.finish === "brillo" ? 1 : 0;
+    const old = acordeMats.length ? acordeMats[0].map : null;
+    acordeMats.forEach((m) => { m.map = tex; m.roughness = rough; m.clearcoat = coat; m.needsUpdate = true; });
+    if (old) old.dispose();
+  }
+
+  Object.values(lines).forEach((l) => { l.group.visible = false; scene.add(l.group); });
+  let active = null;
+  function setLine(key) {
+    const l = lines[key]; if (!l) return;
+    if (active) active.group.visible = false;
+    active = l; l.group.visible = true;
+    camera.position.set(...l.cam); controls.target.set(...l.target);
+    controls.autoRotate = l.auto && !reduce;
+    controls.minAzimuthAngle = l.limits ? l.limits.minAz : -Infinity;
+    controls.maxAzimuthAngle = l.limits ? l.limits.maxAz : Infinity;
+    controls.maxPolarAngle = l.limits ? l.limits.maxPolar : 1.32;
+    controls.minDistance = 2.2; controls.maxDistance = 7.5;
+    controls.update();
+    floor.visible = key !== "acorde";
+  }
+  CC.setLine = setLine;
+  CC.setTile = setTile;
+  setTile(CC.tile);
+  setLine(CC.currentLine);
+
+  let visible = true;
+  observe(stage, (v) => { visible = v; });
+  function frame() {
+    requestAnimationFrame(frame);
+    if (!visible || document.hidden) return;
+    controls.update();
+    renderer.render(scene, camera);
+  }
+  requestAnimationFrame(frame);
+}
+
+function webglOK() {
+  try { const c = document.createElement("canvas"); return !!(c.getContext("webgl2") || c.getContext("webgl")); } catch (e) { return false; }
+}
+async function start() {
+  if (!webglOK()) return;
+  try { await document.fonts.ready; } catch (e) {}
+  initHero();
+  initShowroom();
+  CC.ready3d = true;
+  CC.hideFallbacks();
+}
+start().catch((e) => { console.error(e); });
+</script>
